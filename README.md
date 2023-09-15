@@ -47,6 +47,14 @@ Mục tiêu của dự án là giúp cho việc quản lý sản phẩm, tồn k
     <td></td>
     <td>Đăng ký người dùng<br>Show sản phẩm<br>Lập đơn hàng mua bán</td>
   </tr>
+   <tr>
+    <td>AI</td>
+    <td>Chức năng</td>
+  </tr>
+   <tr>
+    <td></td>
+    <td>Bot chat tư vấn sản phẩm cho người dùng</td>
+  </tr>
  
 </table>
 
