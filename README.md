@@ -58,4 +58,3 @@ Mục tiêu của dự án là giúp cho việc quản lý sản phẩm, tồn k
  
 </table>
 
-Bạn có thể thay đổi nội dung của các ô bằng cách sửa đổi các giá trị trong thẻ `<td>` hoặc `<th>`.
