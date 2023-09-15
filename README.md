@@ -40,16 +40,16 @@ Mục tiêu của dự án là giúp cho việc quản lý sản phẩm, tồn k
     <td>Quản lý TT sản phẩm<br>Quản lý TT người dùng<br>Quản lý TT khách hàng<br>Quản lý TT hóa đơn</td>
   </tr>
   <tr>
-    <td>Web</td>
-    <td>Chức năng</td>
+    <th>Web</th>
+    <th>Chức năng</th>
   </tr>
   <tr>
     <td></td>
     <td>Đăng ký người dùng<br>Show sản phẩm<br>Lập đơn hàng mua bán</td>
   </tr>
    <tr>
-    <td>AI</td>
-    <td>Chức năng</td>
+    <th>AI</th>
+    <th>Chức năng</th>
   </tr>
    <tr>
     <td></td>
