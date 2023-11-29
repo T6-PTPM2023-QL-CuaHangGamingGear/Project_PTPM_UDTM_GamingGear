@@ -1,0 +1,10 @@
+C:\Users\MSI\Documents\GitHub\Project_PTPM_UDTM_GamingGear\DA_PTPM_UDTM\BLL\bin\Debug\BLL.dll
+C:\Users\MSI\Documents\GitHub\Project_PTPM_UDTM_GamingGear\DA_PTPM_UDTM\BLL\bin\Debug\BLL.pdb
+C:\Users\MSI\Documents\GitHub\Project_PTPM_UDTM_GamingGear\DA_PTPM_UDTM\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+C:\Users\MSI\Documents\GitHub\Project_PTPM_UDTM_GamingGear\DA_PTPM_UDTM\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\MSI\Documents\GitHub\Project_PTPM_UDTM_GamingGear\DA_PTPM_UDTM\BLL\obj\Debug\BLL.dll
+C:\Users\MSI\Documents\GitHub\Project_PTPM_UDTM_GamingGear\DA_PTPM_UDTM\BLL\obj\Debug\BLL.pdb
+C:\Users\MSI\Documents\GitHub\Project_PTPM_UDTM_GamingGear\DA_PTPM_UDTM\BLL\bin\Debug\DAL.dll
+C:\Users\MSI\Documents\GitHub\Project_PTPM_UDTM_GamingGear\DA_PTPM_UDTM\BLL\bin\Debug\DAL.pdb
+C:\Users\MSI\Documents\GitHub\Project_PTPM_UDTM_GamingGear\DA_PTPM_UDTM\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\MSI\Documents\GitHub\Project_PTPM_UDTM_GamingGear\DA_PTPM_UDTM\BLL\bin\Debug\DAL.dll.config
