@@ -4,8 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DAL;
-using DAL.DTO;
 using DAL.DAO;
+
+using System.Data;
+
 namespace BLL
 {
     public class NhanVienBLL
@@ -19,9 +21,18 @@ namespace BLL
         {
             nvdao.UpdateNhanVien(text, NV);
         }
-        public void DeleteNV(string text)
+        public static void DeleteNV(string text)
         {
-            nvdao.DeleteNhanVien(text);
+            //nvdao.DeleteNhanVien(text);
+            NhanVienDAO.DeleteNVTest(text);
+        }
+        public static List<NhanVien> LoadListNV()
+        {
+            return NhanVienDAO.GetListNhanVien();
+        }
+        public static List<NhanVien> SearchNV(string text)
+        {
+            return NhanVienDAO.SearchNhanVien(text);
         }
 
     }

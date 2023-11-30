@@ -16,4 +16,10 @@ C:\Users\MSI\Documents\GitHub\Project_PTPM_UDTM_GamingGear\DA_PTPM_UDTM\GUI\bin\
 C:\Users\MSI\Documents\GitHub\Project_PTPM_UDTM_GamingGear\DA_PTPM_UDTM\GUI\obj\Debug\GUI.FrmMain.resources
 C:\Users\MSI\Documents\GitHub\Project_PTPM_UDTM_GamingGear\DA_PTPM_UDTM\GUI\obj\Debug\GUI.UserControl_FrmList.UC_FrmNghiepVu.resources
 C:\Users\MSI\Documents\GitHub\Project_PTPM_UDTM_GamingGear\DA_PTPM_UDTM\GUI\obj\Debug\GUI.FrmClient.resources
+C:\Users\MSI\Documents\GitHub\Project_PTPM_UDTM_GamingGear\DA_PTPM_UDTM\GUI\bin\Debug\ThietKeControl.dll
+C:\Users\MSI\Documents\GitHub\Project_PTPM_UDTM_GamingGear\DA_PTPM_UDTM\GUI\bin\Debug\ThietKeControl.pdb
 C:\Users\MSI\Documents\GitHub\Project_PTPM_UDTM_GamingGear\DA_PTPM_UDTM\GUI\obj\Debug\GUI.FrmUser.resources
+C:\Users\MSI\Documents\GitHub\Project_PTPM_UDTM_GamingGear\DA_PTPM_UDTM\GUI\bin\Debug\BLL.dll
+C:\Users\MSI\Documents\GitHub\Project_PTPM_UDTM_GamingGear\DA_PTPM_UDTM\GUI\bin\Debug\BLL.pdb
+C:\Users\MSI\Documents\GitHub\Project_PTPM_UDTM_GamingGear\DA_PTPM_UDTM\GUI\obj\Debug\GUI.UserControl_FrmList.UC_FrmCURD.resources
+C:\Users\MSI\Documents\GitHub\Project_PTPM_UDTM_GamingGear\DA_PTPM_UDTM\GUI\obj\Debug\GUI.FrmUser_CURD.resources

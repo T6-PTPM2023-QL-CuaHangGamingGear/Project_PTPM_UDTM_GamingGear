@@ -317,6 +317,10 @@ GO
 --------------------------------------------------------------------------------------------------------------------
 --DataOnly
 INSERT INTO NhanVien (TenNV, GioiTinh, SDT, NgaySinh, MatKhau, ChucVu, TinhTrang)
-VALUES ('Truong Canh Truong', 'Nam', '2001200696', '2002-04-14 00:00:00', 'truong', 'QLKho', 'Con lam');
-	   ('Vu Ngoc Hoang Cung', 'Nam', '2001206991', '2002-04-14 00:00:00', 'truong', 'QLKho', 'Con lam');
-	   ('Vo Nguyen Thanh Nhan', 'Nam', '2001190706', '2002-04-14 00:00:00', 'truong', 'QLKho', 'Con lam');
+VALUES ('Truong Canh Truong', 'Nam', '2001200696', '2002-04-14 00:00:00', 'truong', 'NV Kho', 'Con lam')
+
+INSERT INTO NhanVien (TenNV, GioiTinh, SDT, NgaySinh, MatKhau, ChucVu, TinhTrang)
+VALUES ('Vu Ngoc Hoang Cung', 'Nam', '2001206991', '2002-04-14 00:00:00', 'cung', 'NV BanHang', 'Con lam')
+
+INSERT INTO NhanVien (TenNV, GioiTinh, SDT, NgaySinh, MatKhau, ChucVu, TinhTrang)
+VALUES('Vo Nguyen Thanh Nhan', 'Nam', '2001190706', '2002-04-14 00:00:00', 'nhan', 'NV ThongKe', 'Con lam')

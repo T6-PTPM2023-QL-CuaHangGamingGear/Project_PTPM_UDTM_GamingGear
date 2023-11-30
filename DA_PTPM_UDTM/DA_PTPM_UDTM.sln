@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{7
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{EFB5BB2F-F066-4B8E-B6C9-735F7F67E9BB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThietKeControl", "ThietKeControl\ThietKeControl.csproj", "{AAE91F81-6D39-4499-B889-D58F0A7738B4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{EFB5BB2F-F066-4B8E-B6C9-735F7F67E9BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EFB5BB2F-F066-4B8E-B6C9-735F7F67E9BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EFB5BB2F-F066-4B8E-B6C9-735F7F67E9BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAE91F81-6D39-4499-B889-D58F0A7738B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAE91F81-6D39-4499-B889-D58F0A7738B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAE91F81-6D39-4499-B889-D58F0A7738B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAE91F81-6D39-4499-B889-D58F0A7738B4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,8 @@
+C:\Users\MSI\Documents\GitHub\Project_PTPM_UDTM_GamingGear\DA_PTPM_UDTM\ThietKeControl\bin\Debug\ThietKeControl.dll
+C:\Users\MSI\Documents\GitHub\Project_PTPM_UDTM_GamingGear\DA_PTPM_UDTM\ThietKeControl\bin\Debug\ThietKeControl.pdb
+C:\Users\MSI\Documents\GitHub\Project_PTPM_UDTM_GamingGear\DA_PTPM_UDTM\ThietKeControl\obj\Debug\ThietKeControl.csproj.AssemblyReference.cache
+C:\Users\MSI\Documents\GitHub\Project_PTPM_UDTM_GamingGear\DA_PTPM_UDTM\ThietKeControl\obj\Debug\ThietKeControl.csproj.CoreCompileInputs.cache
+C:\Users\MSI\Documents\GitHub\Project_PTPM_UDTM_GamingGear\DA_PTPM_UDTM\ThietKeControl\obj\Debug\ThietKeControl.dll
+C:\Users\MSI\Documents\GitHub\Project_PTPM_UDTM_GamingGear\DA_PTPM_UDTM\ThietKeControl\obj\Debug\ThietKeControl.pdb
+C:\Users\MSI\Documents\GitHub\Project_PTPM_UDTM_GamingGear\DA_PTPM_UDTM\ThietKeControl\bin\Debug\Guna.UI2.dll
+C:\Users\MSI\Documents\GitHub\Project_PTPM_UDTM_GamingGear\DA_PTPM_UDTM\ThietKeControl\obj\Debug\ThietKeControl.csproj.CopyComplete

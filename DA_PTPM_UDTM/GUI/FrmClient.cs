@@ -17,9 +17,6 @@ namespace GUI
             InitializeComponent();
         }
 
-        private void uC_FrmNghiepVu1_Load(object sender, EventArgs e)
-        {
-            
-        }
+
     }
 }

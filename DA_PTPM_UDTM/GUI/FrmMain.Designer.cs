@@ -40,8 +40,8 @@
             this.btnSanPham = new Guna.UI2.WinForms.Guna2Button();
             this.btnDonHang = new Guna.UI2.WinForms.Guna2Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.panelChild = new System.Windows.Forms.Panel();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -153,7 +153,7 @@
             this.btnKhachHang.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.btnKhachHang.CheckedState.FillColor = System.Drawing.Color.White;
             this.btnKhachHang.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(212)))));
-            this.btnKhachHang.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
+            this.btnKhachHang.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
             this.btnKhachHang.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnKhachHang.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnKhachHang.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -180,7 +180,7 @@
             this.btnSanPham.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.btnSanPham.CheckedState.FillColor = System.Drawing.Color.White;
             this.btnSanPham.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(212)))));
-            this.btnSanPham.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
+            this.btnSanPham.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
             this.btnSanPham.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnSanPham.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnSanPham.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -207,7 +207,7 @@
             this.btnDonHang.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.btnDonHang.CheckedState.FillColor = System.Drawing.Color.White;
             this.btnDonHang.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(212)))));
-            this.btnDonHang.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
+            this.btnDonHang.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
             this.btnDonHang.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnDonHang.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnDonHang.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -234,21 +234,21 @@
             this.panel2.Location = new System.Drawing.Point(180, 0);
             this.panel2.Name = "panel2";
             this.panel2.Padding = new System.Windows.Forms.Padding(0, 6, 6, 6);
-            this.panel2.Size = new System.Drawing.Size(839, 557);
+            this.panel2.Size = new System.Drawing.Size(1091, 557);
             this.panel2.TabIndex = 6;
-            // 
-            // guna2Elipse1
-            // 
-            this.guna2Elipse1.BorderRadius = 40;
-            this.guna2Elipse1.TargetControl = this;
             // 
             // panelChild
             // 
             this.panelChild.BackColor = System.Drawing.Color.White;
             this.panelChild.Location = new System.Drawing.Point(0, 10);
             this.panelChild.Name = "panelChild";
-            this.panelChild.Size = new System.Drawing.Size(829, 537);
+            this.panelChild.Size = new System.Drawing.Size(1081, 537);
             this.panelChild.TabIndex = 0;
+            // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.BorderRadius = 40;
+            this.guna2Elipse1.TargetControl = this;
             // 
             // guna2Elipse2
             // 
@@ -259,7 +259,7 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(212)))));
-            this.ClientSize = new System.Drawing.Size(1019, 557);
+            this.ClientSize = new System.Drawing.Size(1271, 557);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.btnDonHang);
             this.Controls.Add(this.btnSanPham);

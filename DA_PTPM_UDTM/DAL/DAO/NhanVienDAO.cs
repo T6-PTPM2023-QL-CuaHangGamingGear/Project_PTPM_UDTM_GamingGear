@@ -10,12 +10,12 @@ namespace DAL.DAO
     public class NhanVienDAO : DBDataContext
     {
 
-        public List<NhanVien> GetListNhanVien()
+        public static List<NhanVien> GetListNhanVien()
         {
             return db.NhanViens.ToList();
         }
 
-        public List<NhanVien> SearchNhanVien(string data)
+        public static List<NhanVien> SearchNhanVien(string data)
         {
             return db.NhanViens.Where(nv => nv.MaNV.Contains(data)|| nv.TenNV.Contains(data)).ToList();
         }
@@ -48,12 +48,11 @@ namespace DAL.DAO
                 db.SubmitChanges();
                 return true;
             }
-            catch (Exception e)
+            catch
             {
                 return false;
             }
         }
-
         public bool DeleteNhanVien(String key)
         {
             try
@@ -62,10 +61,22 @@ namespace DAL.DAO
                 db.SubmitChanges();
                 return true;
             }
-            catch 
+            catch
             {
                 return false;
             }
+        }
+
+        public static void DeleteNVTest(String key)
+        {
+            try
+            {
+                NhanVien nhanVien = db.NhanViens.First(nv => nv.MaNV == key);
+                db.NhanViens.DeleteOnSubmit(nhanVien);
+                db.SubmitChanges();
+            }
+            catch { }
+               
         }
 
         public bool CheckDataTonTai(String key)
