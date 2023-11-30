@@ -17,9 +17,6 @@ namespace GUI.UserControl_FrmList
             InitializeComponent();
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            this.Dispose();
-        }
+
     }
 }

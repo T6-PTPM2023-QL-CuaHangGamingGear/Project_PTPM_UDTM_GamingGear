@@ -74,5 +74,15 @@ namespace GUI
         }
 
         #endregion Method
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure you want to logout?", "Log Out", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                FrmLogin login = new FrmLogin();
+                this.Dispose();
+                login.ShowDialog();
+            }
+        }
     }
 }

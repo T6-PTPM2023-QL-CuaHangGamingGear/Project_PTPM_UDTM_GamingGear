@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -46,12 +47,14 @@ namespace GUI
                     NhanVien data = new NhanVien();
                     data.TenNV = txtName.Text;
                     data.GioiTinh = txtGender.Text;
-                    data.SDT = dtDob.Text;
+                    data.SDT = txtPhone.Text;
+                    data.NgaySinh = DateTime.ParseExact(dtDob.Text, "dd/MM/yyyy", CultureInfo.InvariantCulture);
                     data.MatKhau = txtPasswrod.Text;
                     data.ChucVu = txtPosition.Text;
                     data.TinhTrang = txtNote.Text;
                     nv.AddNV(data);
                     MessageBox.Show("Add success", title);
+                    this.Dispose();
                 }
                 else
                 {
@@ -77,23 +80,35 @@ namespace GUI
             CheckField();
             if (check)
             {
-                if (MessageBox.Show("Are you sure you want to update this user? ", title, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (MessageBox.Show("Are you sure you want to update this user ? ", title, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     NhanVien data = new NhanVien();
                     data.TenNV = txtName.Text;
                     data.GioiTinh = txtGender.Text;
-                    data.SDT = dtDob.Text;
+                    data.SDT = txtPhone.Text;
+                    data.NgaySinh = DateTime.ParseExact(dtDob.Text, "dd/MM/yyyy", CultureInfo.InvariantCulture);
                     data.MatKhau = txtPasswrod.Text;
                     data.ChucVu = txtPosition.Text;
                     data.TinhTrang = txtNote.Text;
                     nv.UpdateNV(txtID.Text,data);
                     MessageBox.Show("Update success", title);
+                    this.Dispose();
                 }
                 else
                 {
                     MessageBox.Show("Update failed", title);
                 }
             }
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

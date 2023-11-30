@@ -68,6 +68,12 @@
     <Compile Include="FrmClient.Designer.cs">
       <DependentUpon>FrmClient.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmClient_CURD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmClient_CURD.Designer.cs">
+      <DependentUpon>FrmClient_CURD.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,6 +114,9 @@
     </Compile>
     <EmbeddedResource Include="FrmClient.resx">
       <DependentUpon>FrmClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmClient_CURD.resx">
+      <DependentUpon>FrmClient_CURD.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>

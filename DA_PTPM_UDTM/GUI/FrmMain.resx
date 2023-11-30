@@ -198,6 +198,28 @@
         kQ0h9rDSm7ybpmmapmmapmn83N39D6+CnclsldfkAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="resource.Image1" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAStJREFUSEvt
+        ljFKA0EYhbeQJQgpcoB03sBSixRp05jCS0gqwUYhpQcQQtqcJYWVpzCksrE3k/fmfwtbZJzZybKC7Acf
+        zP6Z978mLFv0VDjnbuELfM30Gd5oXRoILGAbHOCD1sbB5Z2PtcOn1sZRgCw1agyztsI5jeLoPumLk2HW
+        VnRfPIbvXKJRHF4WjYuRudOR5xK+6TEOG0VOMdnAS43Ssawnt5h8wCuN07Cc52Qx5iM4DVjnG94rFscy
+        nlDxxH5OZg1LxcPYXU9bxSs4UDyM3fWEiofwOmCdLzhTLI5lPOf8ubZwrHEalvPkFP8wBy80SoeNIqd4
+        riPP3b1AKpDt9pVZwayt6It/QfdJ58V7i7TCTmvj4PLffN4SBPhB/wifMmW22Qf9P6Yojt3CFCw3KJlt
+        AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="btnLogout.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAStJREFUSEvt
+        ljFKA0EYhbeQJQgpcoB03sBSixRp05jCS0gqwUYhpQcQQtqcJYWVpzCksrE3k/fmfwtbZJzZybKC7Acf
+        zP6Z978mLFv0VDjnbuELfM30Gd5oXRoILGAbHOCD1sbB5Z2PtcOn1sZRgCw1agyztsI5jeLoPumLk2HW
+        VnRfPIbvXKJRHF4WjYuRudOR5xK+6TEOG0VOMdnAS43Ssawnt5h8wCuN07Cc52Qx5iM4DVjnG94rFscy
+        nlDxxH5OZg1LxcPYXU9bxSs4UDyM3fWEiofwOmCdLzhTLI5lPOf8ubZwrHEalvPkFP8wBy80SoeNIqd4
+        riPP3b1AKpDt9pVZwayt6It/QfdJ58V7i7TCTmvj4PLffN4SBPhB/wifMmW22Qf9P6Yojt3CFCw3KJlt
+        AAAAAElFTkSuQmCC
+</value>
+  </data>
   <data name="imgSlide.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         /9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEB
@@ -239,7 +261,7 @@
         WjZLaCQL9jha0Sedb2nhYHJlQqYpTFKYpTFK/9k=
 </value>
   </data>
-  <data name="resource.Image1" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="resource.Image2" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAABGdBTUEAALGPC/xhBQAAA1dJREFUeF7t
         nOFxEzEQhd0BVwIlUAL/HWbcAZRACZRAA5wpgRLSAXQQOsAdgFbZS4bkSZbO2vPKet/M9wffrqV7yLLP
@@ -278,7 +300,7 @@
         RU5ErkJggg==
 </value>
   </data>
-  <data name="resource.Image2" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="resource.Image3" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAABGdBTUEAALGPC/xhBQAABrhJREFUeF7t
         ne2RHDUQhp0BG4JDIAT+31HlDI4M7AwgA0iAW2fgC4EMcAY4A5yB6R6/2yWPX92oezTSiNNT9ZRdvlet
@@ -345,7 +367,7 @@
         CD9WffW55rLm2fxX3NZV7suyLMuNu7v7D50KBCqLN4EEAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="resource.Image3" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="resource.Image4" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAABGdBTUEAALGPC/xhBQAAA4NJREFUeF7t
         nNFtFEEQRJ0BGwIhEAL/d0iEQCaQARFw6wwIgRBIgQwgA9ix6lon651Zl72zN1I96f311PaUBfNhyXch
@@ -385,7 +407,7 @@
         luA3tepKyHMNOsXZPWqHz9RqZmZmZma2EYfDXznRuq0fHCAHAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="resource.Image4" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="resource.Image5" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAABGdBTUEAALGPC/xhBQAAB7FJREFUeF7t
         Xe1x3DYUVAe5ElSCOoj/S55RB0oHSgdKB3EDuVMHUQdWB1YHdgd2B84u7h1zRy5AkMSXaO7MjuwjPt4H

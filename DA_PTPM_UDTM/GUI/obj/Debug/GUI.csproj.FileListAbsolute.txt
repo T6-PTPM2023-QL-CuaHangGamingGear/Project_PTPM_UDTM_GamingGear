@@ -23,3 +23,4 @@ C:\Users\MSI\Documents\GitHub\Project_PTPM_UDTM_GamingGear\DA_PTPM_UDTM\GUI\bin\
 C:\Users\MSI\Documents\GitHub\Project_PTPM_UDTM_GamingGear\DA_PTPM_UDTM\GUI\bin\Debug\BLL.pdb
 C:\Users\MSI\Documents\GitHub\Project_PTPM_UDTM_GamingGear\DA_PTPM_UDTM\GUI\obj\Debug\GUI.UserControl_FrmList.UC_FrmCURD.resources
 C:\Users\MSI\Documents\GitHub\Project_PTPM_UDTM_GamingGear\DA_PTPM_UDTM\GUI\obj\Debug\GUI.FrmUser_CURD.resources
+C:\Users\MSI\Documents\GitHub\Project_PTPM_UDTM_GamingGear\DA_PTPM_UDTM\GUI\obj\Debug\GUI.FrmClient_CURD.resources

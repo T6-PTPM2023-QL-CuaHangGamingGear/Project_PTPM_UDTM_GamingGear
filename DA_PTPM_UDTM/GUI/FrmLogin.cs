@@ -30,7 +30,7 @@ namespace GUI
         {
             if (txtMaNV.Text.Trim() == "" || txtMatKhau.Text.Trim() == "")
             {
-                MessageBox.Show("Hãy nhập mã nhân viên và mật khẩu!");
+                MessageBox.Show("Please enter your user ID and password!");
             }
             else
             {
@@ -44,7 +44,7 @@ namespace GUI
                 }
                 else
                 {
-                    MessageBox.Show("Đăng nhập không thành công!\nHãy kiểm tra lại thông tin của bạn.");
+                    MessageBox.Show("Login failed!\nPlease check your information again.");
                 }
 
 
@@ -53,7 +53,14 @@ namespace GUI
 
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
 
-
+        private void btnFroget_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Please contact your boss!", "!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }

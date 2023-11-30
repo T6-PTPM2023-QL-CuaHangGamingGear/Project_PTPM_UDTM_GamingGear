@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLogin));
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnExit = new System.Windows.Forms.Panel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.btnLogin = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -39,7 +39,8 @@
             this.txtMaNV = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtMatKhau = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.panel1.SuspendLayout();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnExit.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,20 +49,21 @@
             this.guna2Elipse1.BorderRadius = 20;
             this.guna2Elipse1.TargetControl = this;
             // 
-            // panel1
+            // btnExit
             // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.guna2PictureBox1);
-            this.panel1.Controls.Add(this.btnLogin);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.btnFroget);
-            this.panel1.Controls.Add(this.txtMaNV);
-            this.panel1.Controls.Add(this.txtMatKhau);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(341, 514);
-            this.panel1.TabIndex = 6;
+            this.btnExit.BackColor = System.Drawing.Color.White;
+            this.btnExit.Controls.Add(this.button1);
+            this.btnExit.Controls.Add(this.guna2PictureBox1);
+            this.btnExit.Controls.Add(this.btnLogin);
+            this.btnExit.Controls.Add(this.label1);
+            this.btnExit.Controls.Add(this.btnFroget);
+            this.btnExit.Controls.Add(this.txtMaNV);
+            this.btnExit.Controls.Add(this.txtMatKhau);
+            this.btnExit.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnExit.Location = new System.Drawing.Point(0, 0);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(341, 514);
+            this.btnExit.TabIndex = 6;
             // 
             // guna2PictureBox1
             // 
@@ -107,12 +109,13 @@
             this.btnFroget.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFroget.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFroget.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.btnFroget.Location = new System.Drawing.Point(50, 449);
+            this.btnFroget.Location = new System.Drawing.Point(153, 449);
             this.btnFroget.Name = "btnFroget";
-            this.btnFroget.Size = new System.Drawing.Size(244, 32);
+            this.btnFroget.Size = new System.Drawing.Size(141, 32);
             this.btnFroget.TabIndex = 10;
             this.btnFroget.Text = "Forgot password";
             this.btnFroget.UseVisualStyleBackColor = true;
+            this.btnFroget.Click += new System.EventHandler(this.btnFroget_Click);
             // 
             // txtMaNV
             // 
@@ -164,19 +167,33 @@
             this.guna2Elipse2.BorderRadius = 15;
             this.guna2Elipse2.TargetControl = this.btnLogin;
             // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.button1.Location = new System.Drawing.Point(50, 449);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(45, 32);
+            this.button1.TabIndex = 12;
+            this.button1.Text = "Exit";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(341, 514);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.btnExit);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LoginForm";
             this.Load += new System.EventHandler(this.FrmLogin_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.btnExit.ResumeLayout(false);
+            this.btnExit.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -185,7 +202,7 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel btnExit;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Button btnFroget;
@@ -193,6 +210,7 @@
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
         private Guna.UI2.WinForms.Guna2TextBox txtMatKhau;
         private Guna.UI2.WinForms.Guna2TextBox txtMaNV;
+        private System.Windows.Forms.Button button1;
     }
 }
 

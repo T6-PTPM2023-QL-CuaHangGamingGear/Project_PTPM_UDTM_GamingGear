@@ -59,6 +59,7 @@ namespace GUI
         private void GNbtn_Add_Click(object sender, EventArgs e)
         {
             FrmUser_CURD curd = new FrmUser_CURD(this);
+            curd.txtID.Enabled = false;
             curd.btnUpdate.Visible = false;
             curd.btnSave.Visible = true;
             curd.ShowDialog();
@@ -80,7 +81,7 @@ namespace GUI
                 curd1.txtName.Text = dgv_ListNV.Rows[e.RowIndex].Cells[1].Value.ToString();
                 curd1.txtGender.Text = dgv_ListNV.Rows[e.RowIndex].Cells[2].Value.ToString();
                 curd1.txtPhone.Text = dgv_ListNV.Rows[e.RowIndex].Cells[3].Value.ToString();
-                //curd1.dtDob.Text = dgv_ListNV.Rows[e.RowIndex].Cells[4].Value.ToString(); bug do csdl để kiểu dữ liệu là smalldatetime
+                curd1.dtDob.Text = dgv_ListNV.Rows[e.RowIndex].Cells[4].Value.ToString(); //bug cập nhật xong thì dữ liệu sdt bị ghi đè bằng ngày sinh
                 curd1.txtPasswrod.Text = dgv_ListNV.Rows[e.RowIndex].Cells[5].Value.ToString();
                 curd1.txtPosition.Text = dgv_ListNV.Rows[e.RowIndex].Cells[6].Value.ToString();
                 curd1.txtNote.Text = dgv_ListNV.Rows[e.RowIndex].Cells[7].Value.ToString();

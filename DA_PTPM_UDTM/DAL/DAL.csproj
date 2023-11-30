@@ -44,12 +44,14 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="DAO\DBDataContext.cs" />
+    <Compile Include="DAO\KhachHangDAO.cs" />
     <Compile Include="DAO\NhanVienDAO.cs" />
     <Compile Include="DB_GearShop.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DB_GearShop.dbml</DependentUpon>
     </Compile>
+    <Compile Include="DTO\KhachHangDTO.cs" />
     <Compile Include="DTO\NhanVienDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
