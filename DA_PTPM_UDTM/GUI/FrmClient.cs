@@ -28,17 +28,17 @@ namespace GUI
             list = KhachHangBLL.LoadListKH();
             for (int i = 0; i < list.Count; i++)
             {
-                dgv_ListKH.Rows.Add(list[i].MaKH, list[i].TenKH, list[i].DiaChi, list[i].Email, list[i].MatKhau, list[i].GhiChu);
+                dgv_ListKH.Rows.Add(list[i].MaKH, list[i].TenKH, list[i].DiaChi, list[i].DienThoai, list[i].Email, list[i].MatKhau, list[i].GhiChu);
             }
         }
 
         private void txtSearch_TextChanged(object sender, EventArgs e)
         {
             dgv_ListKH.Rows.Clear();
-            list = KhachHangBLL.SearchKH(Convert.ToInt32(txtSearch.Text));
+            list = KhachHangBLL.SearchKH(txtSearch.Text);
             for (int i = 0; i < list.Count; i++)
             {
-                dgv_ListKH.Rows.Add(list[i].MaKH, list[i].TenKH, list[i].DiaChi, list[i].Email, list[i].MatKhau, list[i].GhiChu);
+                dgv_ListKH.Rows.Add(list[i].MaKH, list[i].TenKH, list[i].DiaChi, list[i].DienThoai, list[i].Email, list[i].MatKhau, list[i].GhiChu);
             }
 
         }
@@ -54,7 +54,7 @@ namespace GUI
             list = KhachHangBLL.LoadListKH();
             for (int i = 0; i < list.Count; i++)
             {
-                dgv_ListKH.Rows.Add(list[i].MaKH, list[i].TenKH, list[i].DiaChi, list[i].Email, list[i].MatKhau, list[i].GhiChu);
+                dgv_ListKH.Rows.Add(list[i].MaKH, list[i].TenKH, list[i].DiaChi, list[i].DienThoai, list[i].Email, list[i].MatKhau, list[i].GhiChu);
             }
         }
 
@@ -66,12 +66,11 @@ namespace GUI
                 FrmClient_CURD curd1 = new FrmClient_CURD(this);
                 curd1.txtID.Text = dgv_ListKH.Rows[e.RowIndex].Cells[0].Value.ToString();
                 curd1.txtName.Text = dgv_ListKH.Rows[e.RowIndex].Cells[1].Value.ToString();
-                curd1.txtPhone.Text = dgv_ListKH.Rows[e.RowIndex].Cells[2].Value.ToString();
-                curd1.txtEmail.Text = dgv_ListKH.Rows[e.RowIndex].Cells[3].Value.ToString();
-                curd1.dtDob.Text = dgv_ListKH.Rows[e.RowIndex].Cells[4].Value.ToString(); //bug cập nhật xong thì dữ liệu sdt bị ghi đè bằng ngày sinh
+                curd1.txtAddress.Text = dgv_ListKH.Rows[e.RowIndex].Cells[2].Value.ToString();
+                curd1.txtPhone.Text = dgv_ListKH.Rows[e.RowIndex].Cells[3].Value.ToString();
+                curd1.txtEmail.Text = dgv_ListKH.Rows[e.RowIndex].Cells[4].Value.ToString();
                 curd1.txtPasswrod.Text = dgv_ListKH.Rows[e.RowIndex].Cells[5].Value.ToString();
-                curd1.txtAddress.Text = dgv_ListKH.Rows[e.RowIndex].Cells[6].Value.ToString();
-                curd1.txtNote.Text = dgv_ListKH.Rows[e.RowIndex].Cells[7].Value.ToString();
+                curd1.txtNote.Text = dgv_ListKH.Rows[e.RowIndex].Cells[6].Value.ToString();
 
                 curd1.txtID.Enabled = false;
                 curd1.btnSave.Visible = false;
@@ -82,7 +81,7 @@ namespace GUI
                 list = KhachHangBLL.LoadListKH();
                 for (int i = 0; i < list.Count; i++)
                 {
-                    dgv_ListKH.Rows.Add(list[i].MaKH, list[i].TenKH, list[i].DiaChi, list[i].Email, list[i].MatKhau, list[i].GhiChu);
+                    dgv_ListKH.Rows.Add(list[i].MaKH, list[i].TenKH, list[i].DiaChi, list[i].DienThoai, list[i].Email, list[i].MatKhau, list[i].GhiChu);
                 }
             }
 
@@ -97,7 +96,7 @@ namespace GUI
                 list = KhachHangBLL.LoadListKH();
                 for (int i = 0; i < list.Count; i++)
                 {
-                    dgv_ListKH.Rows.Add(list[i].MaKH, list[i].TenKH, list[i].DiaChi, list[i].Email, list[i].MatKhau, list[i].GhiChu);
+                    dgv_ListKH.Rows.Add(list[i].MaKH, list[i].TenKH, list[i].DiaChi, list[i].DienThoai, list[i].Email, list[i].MatKhau, list[i].GhiChu);
                 }
             }
         }

@@ -79,13 +79,12 @@ namespace GUI
                 FrmUser_CURD curd1 = new FrmUser_CURD(this);
                 curd1.txtID.Text = dgv_ListNV.Rows[e.RowIndex].Cells[0].Value.ToString();
                 curd1.txtName.Text = dgv_ListNV.Rows[e.RowIndex].Cells[1].Value.ToString();
-                curd1.txtGender.Text = dgv_ListNV.Rows[e.RowIndex].Cells[2].Value.ToString();
-                curd1.txtPhone.Text = dgv_ListNV.Rows[e.RowIndex].Cells[3].Value.ToString();
-                curd1.dtDob.Text = dgv_ListNV.Rows[e.RowIndex].Cells[4].Value.ToString(); 
-                curd1.txtPasswrod.Text = dgv_ListNV.Rows[e.RowIndex].Cells[5].Value.ToString();
-                curd1.txtPosition.Text = dgv_ListNV.Rows[e.RowIndex].Cells[6].Value.ToString();
+                curd1.txtIDCard.Text = dgv_ListNV.Rows[e.RowIndex].Cells[2].Value.ToString();
+                curd1.txtAddress.Text = dgv_ListNV.Rows[e.RowIndex].Cells[3].Value.ToString();
+                curd1.txtPhone.Text = dgv_ListNV.Rows[e.RowIndex].Cells[4].Value.ToString();
+                curd1.txtPosition.Text = dgv_ListNV.Rows[e.RowIndex].Cells[5].Value.ToString();
+                curd1.txtPasswrod.Text = dgv_ListNV.Rows[e.RowIndex].Cells[6].Value.ToString();
                 curd1.txtNote.Text = dgv_ListNV.Rows[e.RowIndex].Cells[7].Value.ToString();
-
                 curd1.txtID.Enabled = false;
                 curd1.btnSave.Visible = false;
                 curd1.btnUpdate.Visible = true;

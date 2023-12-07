@@ -34,6 +34,7 @@
             this.btnClose = new Guna.UI2.WinForms.Guna2Button();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtAddress = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtID = new Guna.UI2.WinForms.Guna2TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.txtPasswrod = new Guna.UI2.WinForms.Guna2TextBox();
@@ -41,11 +42,8 @@
             this.txtNote = new ThietKeControl.txtChiNhapChu();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.dtDob = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.txtPhone = new ThietKeControl.txtChiNhapSo();
             this.label7 = new System.Windows.Forms.Label();
-            this.txtEmail = new ThietKeControl.txtChiNhapChu();
             this.label6 = new System.Windows.Forms.Label();
             this.txtName = new ThietKeControl.txtChiNhapChu();
             this.label5 = new System.Windows.Forms.Label();
@@ -57,8 +55,8 @@
             this.btnUpdate = new Guna.UI2.WinForms.Guna2Button();
             this.btnSave = new Guna.UI2.WinForms.Guna2Button();
             this.btnCancel = new Guna.UI2.WinForms.Guna2Button();
-            this.txtAddress = new Guna.UI2.WinForms.Guna2TextBox();
             this.uC_FrmCURD1 = new GUI.UserControl_FrmList.UC_FrmCURD();
+            this.txtEmail = new Guna.UI2.WinForms.Guna2TextBox();
             this.panel1.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
@@ -87,6 +85,7 @@
             this.btnClose.PressedColor = System.Drawing.Color.BlueViolet;
             this.btnClose.Size = new System.Drawing.Size(41, 42);
             this.btnClose.TabIndex = 15;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // label2
             // 
@@ -103,6 +102,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.txtEmail);
             this.panel1.Controls.Add(this.txtAddress);
             this.panel1.Controls.Add(this.txtID);
             this.panel1.Controls.Add(this.label12);
@@ -111,11 +111,8 @@
             this.panel1.Controls.Add(this.txtNote);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.dtDob);
             this.panel1.Controls.Add(this.txtPhone);
             this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.txtEmail);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.txtName);
             this.panel1.Controls.Add(this.label5);
@@ -123,6 +120,26 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(514, 454);
             this.panel1.TabIndex = 17;
+            // 
+            // txtAddress
+            // 
+            this.txtAddress.BorderRadius = 6;
+            this.txtAddress.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtAddress.DefaultText = "";
+            this.txtAddress.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtAddress.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtAddress.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtAddress.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtAddress.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtAddress.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAddress.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtAddress.Location = new System.Drawing.Point(219, 187);
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.PasswordChar = '\0';
+            this.txtAddress.PlaceholderText = "";
+            this.txtAddress.SelectedText = "";
+            this.txtAddress.Size = new System.Drawing.Size(277, 30);
+            this.txtAddress.TabIndex = 20;
             // 
             // txtID
             // 
@@ -167,7 +184,7 @@
             this.txtPasswrod.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPasswrod.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPasswrod.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPasswrod.Location = new System.Drawing.Point(25, 367);
+            this.txtPasswrod.Location = new System.Drawing.Point(24, 287);
             this.txtPasswrod.Name = "txtPasswrod";
             this.txtPasswrod.PasswordChar = '\0';
             this.txtPasswrod.PlaceholderText = "";
@@ -180,7 +197,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.DarkGray;
-            this.label11.Location = new System.Drawing.Point(22, 336);
+            this.label11.Location = new System.Drawing.Point(22, 256);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(69, 17);
             this.label11.TabIndex = 16;
@@ -198,7 +215,7 @@
             this.txtNote.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtNote.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNote.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNote.Location = new System.Drawing.Point(337, 278);
+            this.txtNote.Location = new System.Drawing.Point(219, 287);
             this.txtNote.Name = "txtNote";
             this.txtNote.PasswordChar = '\0';
             this.txtNote.PlaceholderText = "";
@@ -211,7 +228,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.DarkGray;
-            this.label10.Location = new System.Drawing.Point(334, 247);
+            this.label10.Location = new System.Drawing.Point(216, 256);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(40, 17);
             this.label10.TabIndex = 12;
@@ -222,39 +239,11 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.DarkGray;
-            this.label9.Location = new System.Drawing.Point(22, 247);
+            this.label9.Location = new System.Drawing.Point(216, 158);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(57, 17);
             this.label9.TabIndex = 10;
             this.label9.Text = "Address";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.DarkGray;
-            this.label8.Location = new System.Drawing.Point(231, 158);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(88, 17);
-            this.label8.TabIndex = 9;
-            this.label8.Text = "Date of Brith";
-            // 
-            // dtDob
-            // 
-            this.dtDob.BorderRadius = 5;
-            this.dtDob.BorderThickness = 2;
-            this.dtDob.Checked = true;
-            this.dtDob.CustomFormat = "dd/MM/yyyy";
-            this.dtDob.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(119)))), ((int)(((byte)(32)))));
-            this.dtDob.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.dtDob.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtDob.Location = new System.Drawing.Point(232, 187);
-            this.dtDob.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.dtDob.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.dtDob.Name = "dtDob";
-            this.dtDob.Size = new System.Drawing.Size(127, 30);
-            this.dtDob.TabIndex = 8;
-            this.dtDob.Value = new System.DateTime(2022, 12, 18, 15, 38, 28, 117);
             // 
             // txtPhone
             // 
@@ -286,26 +275,6 @@
             this.label7.Size = new System.Drawing.Size(49, 17);
             this.label7.TabIndex = 6;
             this.label7.Text = "Phone";
-            // 
-            // txtEmail
-            // 
-            this.txtEmail.BorderRadius = 6;
-            this.txtEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtEmail.DefaultText = "";
-            this.txtEmail.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtEmail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtEmail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtEmail.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtEmail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtEmail.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtEmail.Location = new System.Drawing.Point(24, 187);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.PasswordChar = '\0';
-            this.txtEmail.PlaceholderText = "";
-            this.txtEmail.SelectedText = "";
-            this.txtEmail.Size = new System.Drawing.Size(166, 30);
-            this.txtEmail.TabIndex = 5;
             // 
             // label6
             // 
@@ -454,26 +423,6 @@
             this.btnCancel.TabIndex = 20;
             this.btnCancel.Text = "Cancel";
             // 
-            // txtAddress
-            // 
-            this.txtAddress.BorderRadius = 6;
-            this.txtAddress.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtAddress.DefaultText = "";
-            this.txtAddress.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtAddress.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtAddress.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtAddress.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtAddress.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtAddress.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAddress.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtAddress.Location = new System.Drawing.Point(25, 278);
-            this.txtAddress.Name = "txtAddress";
-            this.txtAddress.PasswordChar = '\0';
-            this.txtAddress.PlaceholderText = "";
-            this.txtAddress.SelectedText = "";
-            this.txtAddress.Size = new System.Drawing.Size(264, 30);
-            this.txtAddress.TabIndex = 20;
-            // 
             // uC_FrmCURD1
             // 
             this.uC_FrmCURD1.BackColor = System.Drawing.SystemColors.ControlLight;
@@ -482,6 +431,26 @@
             this.uC_FrmCURD1.Name = "uC_FrmCURD1";
             this.uC_FrmCURD1.Size = new System.Drawing.Size(569, 577);
             this.uC_FrmCURD1.TabIndex = 0;
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.BorderRadius = 6;
+            this.txtEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtEmail.DefaultText = "";
+            this.txtEmail.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtEmail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtEmail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtEmail.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtEmail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtEmail.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtEmail.Location = new System.Drawing.Point(24, 187);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.PasswordChar = '\0';
+            this.txtEmail.PlaceholderText = "";
+            this.txtEmail.SelectedText = "";
+            this.txtEmail.Size = new System.Drawing.Size(165, 30);
+            this.txtEmail.TabIndex = 21;
             // 
             // FrmClient_CURD
             // 
@@ -523,11 +492,8 @@
         public ThietKeControl.txtChiNhapChu txtNote;
         public System.Windows.Forms.Label label10;
         public System.Windows.Forms.Label label9;
-        public System.Windows.Forms.Label label8;
-        public Guna.UI2.WinForms.Guna2DateTimePicker dtDob;
         public ThietKeControl.txtChiNhapSo txtPhone;
         public System.Windows.Forms.Label label7;
-        public ThietKeControl.txtChiNhapChu txtEmail;
         public System.Windows.Forms.Label label6;
         public ThietKeControl.txtChiNhapChu txtName;
         public System.Windows.Forms.Label label5;
@@ -538,5 +504,6 @@
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse3;
         public Guna.UI2.WinForms.Guna2TextBox txtAddress;
+        public Guna.UI2.WinForms.Guna2TextBox txtEmail;
     }
 }

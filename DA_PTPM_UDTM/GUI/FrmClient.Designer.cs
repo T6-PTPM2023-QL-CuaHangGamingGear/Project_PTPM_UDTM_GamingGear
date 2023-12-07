@@ -40,17 +40,16 @@
             this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.GNbtn_Add = new Guna.UI2.WinForms.Guna2Button();
             this.dgv_ListKH = new System.Windows.Forms.DataGridView();
+            this.uC_FrmNghiepVu1 = new GUI.UserControl_FrmList.UC_FrmNghiepVu();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Edit = new System.Windows.Forms.DataGridViewImageColumn();
             this.Delete = new System.Windows.Forms.DataGridViewImageColumn();
-            this.uC_FrmNghiepVu1 = new GUI.UserControl_FrmList.UC_FrmNghiepVu();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_ListKH)).BeginInit();
@@ -154,11 +153,10 @@
             this.dgv_ListKH.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column2,
             this.Column3,
+            this.Column8,
             this.Column5,
             this.Column4,
-            this.Column6,
             this.Column7,
-            this.Column8,
             this.Column9,
             this.Edit,
             this.Delete});
@@ -187,6 +185,15 @@
             this.dgv_ListKH.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_ListKH_CellContentClick);
             this.dgv_ListKH.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_ListKH_RowEnter);
             // 
+            // uC_FrmNghiepVu1
+            // 
+            this.uC_FrmNghiepVu1.BackColor = System.Drawing.Color.White;
+            this.uC_FrmNghiepVu1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uC_FrmNghiepVu1.Location = new System.Drawing.Point(0, 0);
+            this.uC_FrmNghiepVu1.Name = "uC_FrmNghiepVu1";
+            this.uC_FrmNghiepVu1.Size = new System.Drawing.Size(1081, 537);
+            this.uC_FrmNghiepVu1.TabIndex = 0;
+            // 
             // Column2
             // 
             this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
@@ -200,35 +207,32 @@
             this.Column3.Name = "Column3";
             this.Column3.Width = 71;
             // 
+            // Column8
+            // 
+            this.Column8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Column8.HeaderText = "Address";
+            this.Column8.Name = "Column8";
+            this.Column8.Width = 80;
+            // 
             // Column5
             // 
-            this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column5.HeaderText = "Phone";
             this.Column5.Name = "Column5";
+            this.Column5.Width = 72;
             // 
             // Column4
             // 
-            this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column4.HeaderText = "Email";
             this.Column4.Name = "Column4";
-            // 
-            // Column6
-            // 
-            this.Column6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column6.HeaderText = "Date of Brith";
-            this.Column6.Name = "Column6";
+            this.Column4.Width = 66;
             // 
             // Column7
             // 
             this.Column7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Column7.HeaderText = "Password";
             this.Column7.Name = "Column7";
-            // 
-            // Column8
-            // 
-            this.Column8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column8.HeaderText = "Address";
-            this.Column8.Name = "Column8";
             // 
             // Column9
             // 
@@ -250,15 +254,6 @@
             this.Delete.Image = ((System.Drawing.Image)(resources.GetObject("Delete.Image")));
             this.Delete.Name = "Delete";
             this.Delete.Width = 5;
-            // 
-            // uC_FrmNghiepVu1
-            // 
-            this.uC_FrmNghiepVu1.BackColor = System.Drawing.Color.White;
-            this.uC_FrmNghiepVu1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uC_FrmNghiepVu1.Location = new System.Drawing.Point(0, 0);
-            this.uC_FrmNghiepVu1.Name = "uC_FrmNghiepVu1";
-            this.uC_FrmNghiepVu1.Size = new System.Drawing.Size(1081, 537);
-            this.uC_FrmNghiepVu1.TabIndex = 0;
             // 
             // FrmClient
             // 
@@ -294,11 +289,10 @@
         private System.Windows.Forms.DataGridView dgv_ListKH;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
         private System.Windows.Forms.DataGridViewImageColumn Edit;
         private System.Windows.Forms.DataGridViewImageColumn Delete;

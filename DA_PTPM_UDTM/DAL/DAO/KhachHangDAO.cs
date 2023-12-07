@@ -12,7 +12,7 @@ namespace DAL.DAO
         {
             return db.KhachHangs.ToList();
         }
-        public static List<KhachHang> SearchKhachHang(int data)
+        public static List<KhachHang> SearchKhachHang(String data)
         {
             return db.KhachHangs.Where(nv => nv.MaKH.ToString().Contains(data.ToString()) || nv.TenKH.Contains(data.ToString())).ToList();
         }

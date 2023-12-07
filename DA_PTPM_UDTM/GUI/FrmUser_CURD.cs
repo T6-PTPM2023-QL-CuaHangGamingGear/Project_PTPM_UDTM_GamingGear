@@ -27,10 +27,7 @@ namespace GUI
             userform = user;
         }
 
-        private void FrmUser_CURD_Load(object sender, EventArgs e)
-        {
 
-        }
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
@@ -46,8 +43,8 @@ namespace GUI
                 {
                     NhanVien data = new NhanVien();
                     data.TenNV = txtName.Text;
-                    data.CCCD = txtGender.Text; ////////Sửa form
-                    data.DiaChi = txtGender.Text; /////Sửa form
+                    data.CCCD = txtIDCard.Text; 
+                    data.DiaChi = txtAddress.Text;
                     data.DienThoai = txtPhone.Text;            
                     data.ChucVu = txtPosition.Text;
                     data.MatKhau = txtPasswrod.Text;
@@ -66,7 +63,7 @@ namespace GUI
 
         public void CheckField()
         {
-            if (txtName.Text == "" | txtGender.Text == "" | txtPhone.Text == "" | txtPasswrod.Text == "" | txtPosition.Text == "" | txtNote.Text == "")
+            if (txtName.Text == "" | txtIDCard.Text == "" | txtPhone.Text == "" | txtPasswrod.Text == "" | txtPosition.Text == "" | txtNote.Text == "")
             {
                 MessageBox.Show("No information entered", "Error");
                 return;
@@ -84,8 +81,8 @@ namespace GUI
                 {
                     NhanVien data = new NhanVien();
                     data.TenNV = txtName.Text;
-                    data.CCCD = txtGender.Text; ///sửa form
-                    data.DiaChi = txtPhone.Text; //sửa form
+                    data.CCCD = txtIDCard.Text; 
+                    data.DiaChi = txtAddress.Text; 
                     data.DienThoai = txtPhone.Text;
                     data.ChucVu = txtPosition.Text;
                     data.MatKhau = txtPasswrod.Text;
