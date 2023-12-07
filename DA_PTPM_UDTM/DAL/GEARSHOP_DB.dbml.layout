@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 16.75" name="GEARSHOP_DB">
+  <DataContextMoniker Name="/GEARSHOP_DBDataContext" />
+  <nestedChildShapes>
+    <classShape Id="3dcda66a-d894-4cbe-9370-5434344239a0" absoluteBounds="6.25, 4, 2, 1.9631982421874996">
+      <DataClassMoniker Name="/GEARSHOP_DBDataContext/ChiTietPhieuNhap" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5f929d2e-bd7e-4559-8112-ec77d1a1001c" absoluteBounds="6.265, 4.46, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bee85d84-b508-4c8c-9252-270b80a0de65" absoluteBounds="6.25, 0.75, 2, 2.5401025390625">
+      <DataClassMoniker Name="/GEARSHOP_DBDataContext/DonHang" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3ed15e74-2851-4a7c-b9d4-2c4546da72e8" absoluteBounds="6.265, 1.21, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="654ef15c-13b9-45d1-b673-6207a705f839" absoluteBounds="0.75, 4.375, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/GEARSHOP_DBDataContext/HangSX" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9e8091f2-6312-43bd-8c1e-5e87f46f26f5" absoluteBounds="0.765, 4.835, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="879de4f4-2616-48ca-af0a-c4a21a8c2bf5" absoluteBounds="3.5, 7.875, 2, 2.1554996744791675">
+      <DataClassMoniker Name="/GEARSHOP_DBDataContext/KhachHang" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cec7f475-c4ba-4348-ab18-62a2bbd1fd94" absoluteBounds="3.515, 8.335, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="164be3ff-a1f8-4aa3-8099-0242a6eba187" absoluteBounds="0.75, 2.375, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/GEARSHOP_DBDataContext/LoaiSP" />
+      <nestedChildShapes>
+        <elementListCompartment Id="699b0f31-d194-4ea8-96c2-af0af7d78fc5" absoluteBounds="0.765, 2.835, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="425f23b9-17b2-4de7-a6a1-4fd31fbb5437" absoluteBounds="0.75, 11.625, 2, 1.7708968098958344">
+      <DataClassMoniker Name="/GEARSHOP_DBDataContext/NhaCungCap" />
+      <nestedChildShapes>
+        <elementListCompartment Id="06dcdb25-9648-45db-b38c-7aa795a11ebf" absoluteBounds="0.765, 12.085, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="db21311b-8c07-4628-84d0-0dc001cc178a" absoluteBounds="0.75, 14.125, 2, 2.3478011067708344">
+      <DataClassMoniker Name="/GEARSHOP_DBDataContext/NhanVien" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7aa556e0-fed3-4afa-a86e-ad38b334549b" absoluteBounds="0.765, 14.585, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3e4e3e46-361f-4e5e-9319-5f2aed2b3533" absoluteBounds="3.5, 13, 2, 1.9631982421874987">
+      <DataClassMoniker Name="/GEARSHOP_DBDataContext/PhieuNhap" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3b421980-3c89-4f08-b214-73917b9b826e" absoluteBounds="3.515, 13.46, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3c38e34c-10ac-4091-9d8a-c89baeff5c8a" absoluteBounds="3.5, 3.875, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/GEARSHOP_DBDataContext/SanPham" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b8933b19-2d2a-4fc1-9ada-6a812dc1e69c" absoluteBounds="3.515, 4.335, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.5 : 7.875); (5.875 : 7.5); (5.875 : 2.02005126953125); (6.25 : 2.02005126953125)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/GEARSHOP_DBDataContext/KhachHang/KhachHang_DonHang" />
+      <nodes>
+        <classShapeMoniker Id="879de4f4-2616-48ca-af0a-c4a21a8c2bf5" />
+        <classShapeMoniker Id="bee85d84-b508-4c8c-9252-270b80a0de65" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 13.9815991210937); (7.25 : 13.9815991210937); (7.25 : 5.9631982421875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/GEARSHOP_DBDataContext/PhieuNhap/PhieuNhap_ChiTietPhieuNhap" />
+      <nodes>
+        <classShapeMoniker Id="3e4e3e46-361f-4e5e-9319-5f2aed2b3533" />
+        <classShapeMoniker Id="3dcda66a-d894-4cbe-9370-5434344239a0" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 13.1979484049479); (3.5 : 13.1979484049479)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/GEARSHOP_DBDataContext/NhaCungCap/NhaCungCap_PhieuNhap" />
+      <nodes>
+        <classShapeMoniker Id="425f23b9-17b2-4de7-a6a1-4fd31fbb5437" />
+        <classShapeMoniker Id="3e4e3e46-361f-4e5e-9319-5f2aed2b3533" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 14.5440991210937); (3.5 : 14.5440991210937)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/GEARSHOP_DBDataContext/NhanVien/NhanVien_PhieuNhap" />
+      <nodes>
+        <classShapeMoniker Id="db21311b-8c07-4628-84d0-0dc001cc178a" />
+        <classShapeMoniker Id="3e4e3e46-361f-4e5e-9319-5f2aed2b3533" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 4.98159912109375); (5.79166666666667 : 4.98159912109375 : JumpStart); (5.95833333333333 : 4.98159912109375 : JumpEnd); (6.25 : 4.98159912109375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/GEARSHOP_DBDataContext/SanPham/SanPham_ChiTietPhieuNhap" />
+      <nodes>
+        <classShapeMoniker Id="3c38e34c-10ac-4091-9d8a-c89baeff5c8a" />
+        <classShapeMoniker Id="3dcda66a-d894-4cbe-9370-5434344239a0" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.5 : 3.875); (4.5 : 2.68632940429688); (5.79166666666667 : 2.68632940429687 : JumpStart); (5.95833333333333 : 2.68632940429688 : JumpEnd); (6.25 : 2.68632940429688)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/GEARSHOP_DBDataContext/SanPham/SanPham_DonHang" />
+      <nodes>
+        <classShapeMoniker Id="3c38e34c-10ac-4091-9d8a-c89baeff5c8a" />
+        <classShapeMoniker Id="bee85d84-b508-4c8c-9252-270b80a0de65" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 4.97199625651042); (3.5 : 4.97199625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/GEARSHOP_DBDataContext/HangSX/HangSX_SanPham" />
+      <nodes>
+        <classShapeMoniker Id="654ef15c-13b9-45d1-b673-6207a705f839" />
+        <classShapeMoniker Id="3c38e34c-10ac-4091-9d8a-c89baeff5c8a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 3.12766095865885); (3.9687475 : 3.12766095865885); (3.9687475 : 3.875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/GEARSHOP_DBDataContext/LoaiSP/LoaiSP_SanPham" />
+      <nodes>
+        <classShapeMoniker Id="164be3ff-a1f8-4aa3-8099-0242a6eba187" />
+        <classShapeMoniker Id="3c38e34c-10ac-4091-9d8a-c89baeff5c8a" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

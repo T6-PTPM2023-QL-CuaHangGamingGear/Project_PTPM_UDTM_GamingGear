@@ -46,12 +46,12 @@ namespace GUI
                 {
                     NhanVien data = new NhanVien();
                     data.TenNV = txtName.Text;
-                    data.GioiTinh = txtGender.Text;
-                    data.SDT = txtPhone.Text;
-                    data.NgaySinh = DateTime.ParseExact(dtDob.Text, "dd/MM/yyyy", CultureInfo.InvariantCulture);
-                    data.MatKhau = txtPasswrod.Text;
+                    data.CCCD = txtGender.Text; ////////Sửa form
+                    data.DiaChi = txtGender.Text; /////Sửa form
+                    data.DienThoai = txtPhone.Text;            
                     data.ChucVu = txtPosition.Text;
-                    data.TinhTrang = txtNote.Text;
+                    data.MatKhau = txtPasswrod.Text;
+                    data.GhiChu = txtNote.Text;
                     nv.AddNV(data);
                     MessageBox.Show("Add success", title);
                     this.Dispose();
@@ -84,12 +84,12 @@ namespace GUI
                 {
                     NhanVien data = new NhanVien();
                     data.TenNV = txtName.Text;
-                    data.GioiTinh = txtGender.Text;
-                    data.SDT = txtPhone.Text;
-                    data.NgaySinh = DateTime.ParseExact(dtDob.Text, "dd/MM/yyyy", CultureInfo.InvariantCulture);
-                    data.MatKhau = txtPasswrod.Text;
+                    data.CCCD = txtGender.Text; ///sửa form
+                    data.DiaChi = txtPhone.Text; //sửa form
+                    data.DienThoai = txtPhone.Text;
                     data.ChucVu = txtPosition.Text;
-                    data.TinhTrang = txtNote.Text;
+                    data.MatKhau = txtPasswrod.Text;
+                    data.GhiChu = txtNote.Text;
                     nv.UpdateNV(txtID.Text,data);
                     MessageBox.Show("Update success", title);
                     this.Dispose();

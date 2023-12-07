@@ -28,18 +28,19 @@ namespace GUI
             list = KhachHangBLL.LoadListKH();
             for (int i = 0; i < list.Count; i++)
             {
-                dgv_ListKH.Rows.Add(list[i].MaKH, list[i].TenKH, list[i].SDT, list[i].Email, list[i].NgaySinh, list[i].MatKhau, list[i].DiaChi, list[i].TinhTrang);
+                dgv_ListKH.Rows.Add(list[i].MaKH, list[i].TenKH, list[i].DiaChi, list[i].Email, list[i].MatKhau, list[i].GhiChu);
             }
         }
 
         private void txtSearch_TextChanged(object sender, EventArgs e)
         {
             dgv_ListKH.Rows.Clear();
-            list = KhachHangBLL.SearchKH(txtSearch.Text);
+            list = KhachHangBLL.SearchKH(Convert.ToInt32(txtSearch.Text));
             for (int i = 0; i < list.Count; i++)
             {
-                dgv_ListKH.Rows.Add(list[i].MaKH, list[i].TenKH, list[i].SDT, list[i].Email, list[i].NgaySinh, list[i].MatKhau, list[i].DiaChi, list[i].TinhTrang);
+                dgv_ListKH.Rows.Add(list[i].MaKH, list[i].TenKH, list[i].DiaChi, list[i].Email, list[i].MatKhau, list[i].GhiChu);
             }
+
         }
 
         private void GNbtn_Add_Click(object sender, EventArgs e)
@@ -53,7 +54,7 @@ namespace GUI
             list = KhachHangBLL.LoadListKH();
             for (int i = 0; i < list.Count; i++)
             {
-                dgv_ListKH.Rows.Add(list[i].MaKH, list[i].TenKH, list[i].SDT, list[i].Email, list[i].NgaySinh, list[i].MatKhau, list[i].DiaChi, list[i].TinhTrang);
+                dgv_ListKH.Rows.Add(list[i].MaKH, list[i].TenKH, list[i].DiaChi, list[i].Email, list[i].MatKhau, list[i].GhiChu);
             }
         }
 
@@ -81,29 +82,29 @@ namespace GUI
                 list = KhachHangBLL.LoadListKH();
                 for (int i = 0; i < list.Count; i++)
                 {
-                    dgv_ListKH.Rows.Add(list[i].MaKH, list[i].TenKH, list[i].SDT, list[i].Email, list[i].NgaySinh, list[i].MatKhau, list[i].DiaChi, list[i].TinhTrang);
+                    dgv_ListKH.Rows.Add(list[i].MaKH, list[i].TenKH, list[i].DiaChi, list[i].Email, list[i].MatKhau, list[i].GhiChu);
                 }
             }
 
             else if (colName == "Delete")
             {
-                if (MessageBox.Show("Are you sure you want to delete this user?", title, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (MessageBox.Show("Are you sure you want to delete this client?", title, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-                    KhachHangBLL.DeleteKH(khachhang.MaKH);
+                    KhachHangBLL.DeleteKH(khachhang.MaKH.ToString());
                     MessageBox.Show("Delete success", title, MessageBoxButtons.OK, MessageBoxIcon.Question);
                 }
                 dgv_ListKH.Rows.Clear();
                 list = KhachHangBLL.LoadListKH();
                 for (int i = 0; i < list.Count; i++)
                 {
-                    dgv_ListKH.Rows.Add(list[i].MaKH, list[i].TenKH, list[i].SDT, list[i].Email, list[i].NgaySinh, list[i].MatKhau, list[i].DiaChi, list[i].TinhTrang);
+                    dgv_ListKH.Rows.Add(list[i].MaKH, list[i].TenKH, list[i].DiaChi, list[i].Email, list[i].MatKhau, list[i].GhiChu);
                 }
             }
         }
 
         private void dgv_ListKH_RowEnter(object sender, DataGridViewCellEventArgs e)
         {
-            khachhang.MaKH = dgv_ListKH.Rows[e.RowIndex].Cells[0].Value.ToString();
+            khachhang.MaKH =int.Parse(dgv_ListKH.Rows[e.RowIndex].Cells[0].Value.ToString());
 
         }
     }

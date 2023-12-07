@@ -46,12 +46,11 @@ namespace GUI
                 {
                     KhachHang data = new KhachHang();
                     data.TenKH = txtName.Text;
-                    data.SDT = txtPhone.Text;
-                    data.Email = txtEmail.Text;
-                    data.NgaySinh = DateTime.ParseExact(dtDob.Text, "dd/MM/yyyy", CultureInfo.InvariantCulture);
-                    data.MatKhau = txtPasswrod.Text;
                     data.DiaChi = txtAddress.Text;
-                    data.TinhTrang = txtNote.Text;
+                    data.DienThoai = txtPhone.Text;
+                    data.Email = txtEmail.Text;
+                    data.MatKhau = txtPasswrod.Text;
+                    data.GhiChu = txtNote.Text;
                     kh.AddKH(data);
                     MessageBox.Show("Add success", title);
                     this.Dispose();
@@ -72,12 +71,12 @@ namespace GUI
                 {
                     KhachHang data = new KhachHang();
                     data.TenKH = txtName.Text;
-                    data.SDT = txtPhone.Text;
+                    data.DiaChi = txtAddress.Text;
+                    data.DienThoai = txtPhone.Text;
                     data.Email = txtEmail.Text;
-                    data.NgaySinh = DateTime.ParseExact(dtDob.Text, "dd/MM/yyyy", CultureInfo.InvariantCulture);
                     data.MatKhau = txtPasswrod.Text;
                     data.DiaChi = txtAddress.Text;
-                    data.TinhTrang = txtNote.Text;
+                    data.GhiChu = txtNote.Text;
                     kh.UpdateKH(txtID.Text, data);
                     MessageBox.Show("Update success", title);
                     this.Dispose();

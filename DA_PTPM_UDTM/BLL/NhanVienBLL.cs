@@ -21,7 +21,7 @@ namespace BLL
         {
             nvdao.UpdateNhanVien(text, NV);
         }
-        public static void DeleteNV(string text)
+        public static void DeleteNV(int text)
         {
             //nvdao.DeleteNhanVien(text);
             NhanVienDAO.DeleteNVTest(text);

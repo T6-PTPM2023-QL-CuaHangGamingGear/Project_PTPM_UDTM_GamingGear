@@ -15,9 +15,9 @@ namespace DAL.DAO
             return db.NhanViens.ToList();
         }
 
-        public static List<NhanVien> SearchNhanVien(string data)
+        public static List<NhanVien> SearchNhanVien(String data)
         {
-            return db.NhanViens.Where(nv => nv.MaNV.Contains(data)|| nv.TenNV.Contains(data)).ToList();
+            return db.NhanViens.Where(nv => nv.MaNV.ToString().Contains(data.ToString()) || nv.TenNV.Contains(data.ToString())).ToList();
         }
         public bool AddNhanVien(NhanVien data)
         {
@@ -39,12 +39,12 @@ namespace DAL.DAO
             {
                 NhanVien NVUpdate = db.NhanViens.FirstOrDefault(nv => nv.MaNV.Equals(key));
                 NVUpdate.TenNV = data.TenNV;
-                NVUpdate.GioiTinh = data.GioiTinh;
-                NVUpdate.SDT = data.SDT;
-                NVUpdate.NgaySinh = data.NgaySinh;
+                NVUpdate.CCCD = data.CCCD;
+                NVUpdate.DiaChi = data.DiaChi;
+                NVUpdate.DienThoai = data.DienThoai;
                 NVUpdate.MatKhau = data.MatKhau;
                 NVUpdate.ChucVu = data.ChucVu;
-                NVUpdate.TinhTrang = data.TinhTrang;
+                NVUpdate.GhiChu = data.GhiChu;
                 db.SubmitChanges();
                 return true;
             }
@@ -67,7 +67,7 @@ namespace DAL.DAO
             }
         }
 
-        public static void DeleteNVTest(String key)
+        public static void DeleteNVTest(int key)
         {
             try
             {

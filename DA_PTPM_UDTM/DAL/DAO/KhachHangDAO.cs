@@ -12,9 +12,9 @@ namespace DAL.DAO
         {
             return db.KhachHangs.ToList();
         }
-        public static List<KhachHang> SearchKhachHang(string data)
+        public static List<KhachHang> SearchKhachHang(int data)
         {
-            return db.KhachHangs.Where(nv => nv.MaKH.Contains(data) || nv.TenKH.Contains(data)).ToList();
+            return db.KhachHangs.Where(nv => nv.MaKH.ToString().Contains(data.ToString()) || nv.TenKH.Contains(data.ToString())).ToList();
         }
         public bool AddKhachHang(KhachHang data)
         {
@@ -36,12 +36,11 @@ namespace DAL.DAO
             {
                 KhachHang KHUpdate = db.KhachHangs.FirstOrDefault(nv => nv.MaKH.Equals(key));
                 KHUpdate.TenKH = data.TenKH;
-                KHUpdate.SDT = data.SDT;
-                KHUpdate.Email = data.Email;
-                KHUpdate.NgaySinh = data.NgaySinh;
-                KHUpdate.MatKhau = data.MatKhau;
                 KHUpdate.DiaChi = data.DiaChi;
-                KHUpdate.TinhTrang = data.TinhTrang;
+                KHUpdate.DienThoai = data.DienThoai;
+                KHUpdate.Email = data.Email;
+                KHUpdate.MatKhau = data.MatKhau;
+                KHUpdate.GhiChu = data.GhiChu;
                 db.SubmitChanges();
                 return true;
             }
@@ -55,7 +54,7 @@ namespace DAL.DAO
         {
             try
             {
-                KhachHang KHDelete = db.KhachHangs.First(nv => nv.MaKH == key);
+                KhachHang KHDelete = db.KhachHangs.First(nv => nv.MaKH.ToString() == key);
                 db.KhachHangs.DeleteOnSubmit(KHDelete);
                 db.SubmitChanges();
             }

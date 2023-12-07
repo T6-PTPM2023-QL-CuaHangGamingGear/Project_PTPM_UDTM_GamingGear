@@ -328,10 +328,10 @@ VALUES('Vo Nguyen Thanh Nhan', 'Nam', '2001190706', '2002-04-14 00:00:00', 'nhan
 
 
 INSERT INTO KhachHang(TenKH, SDT, Email, NgaySinh, MatKhau, DiaChi, TinhTrang)
-VALUES ('Han Ky An', '2025550193', 'johndoe@internxt.com', '1977-05-19 00:00:00', 'kyan','Tan Phu','Khach hang tiem nang')
+VALUES ('Han Ky An', '2025550193', 'johndoe@internxt.com', '1977-05-19 00:00:00', 'kyan','Tan Phu','')
 
 INSERT INTO KhachHang (TenKH, SDT, Email, NgaySinh, MatKhau, DiaChi, TinhTrang)
-VALUES ('Nguyen Thi Nga', '2025550167', 'jane@beaconmessenger.com', '1985-06-22 00:00:00', 'nga','Binh Chanh', 'Khach hang mua theo dip')
+VALUES ('Nguyen Thi Nga', '2025550167', 'jane@beaconmessenger.com', '1985-06-22 00:00:00', 'nga','Binh Chanh', '')
 
 INSERT INTO KhachHang (TenKH, SDT, Email, NgaySinh, MatKhau, DiaChi, TinhTrang)
-VALUES('Pham Van Huy', '2025550127', 'johndoe012@internxt.com', '1992-12-13 00:00:00', 'huy', 'Long An', 'Khach hang cu')
+VALUES('Pham Van Huy', '2025550127', 'johndoe012@internxt.com', '1992-12-13 00:00:00', 'huy', 'Long An', '')

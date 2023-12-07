@@ -42,7 +42,7 @@ namespace GUI
             //Show một cột là một thông tin của 1 thuộc tính trong bảng nhân viên, tất nhiên phải design lại cái datagridview
             for (int i = 0; i < list.Count; i++)
             {
-                dgv_ListNV.Rows.Add(list[i].MaNV, list[i].TenNV, list[i].GioiTinh, list[i].SDT, list[i].NgaySinh, list[i].MatKhau, list[i].ChucVu, list[i].TinhTrang);
+                dgv_ListNV.Rows.Add(list[i].MaNV, list[i].TenNV, list[i].CCCD, list[i].DiaChi, list[i].DienThoai, list[i].ChucVu, list[i].MatKhau, list[i].GhiChu);
             }
         }
 
@@ -52,7 +52,7 @@ namespace GUI
             list = NhanVienBLL.SearchNV(txtSearch.Text);
             for (int i = 0; i < list.Count; i++)
             {
-                dgv_ListNV.Rows.Add(list[i].MaNV, list[i].TenNV, list[i].GioiTinh, list[i].SDT, list[i].NgaySinh, list[i].MatKhau, list[i].ChucVu, list[i].TinhTrang);
+                dgv_ListNV.Rows.Add(list[i].MaNV, list[i].TenNV, list[i].CCCD, list[i].DiaChi, list[i].DienThoai, list[i].ChucVu, list[i].MatKhau, list[i].GhiChu);
             }
         }
 
@@ -67,7 +67,7 @@ namespace GUI
             list = NhanVienBLL.LoadListNV();
             for (int i = 0; i < list.Count; i++)
             {
-                dgv_ListNV.Rows.Add(list[i].MaNV, list[i].TenNV, list[i].GioiTinh, list[i].SDT, list[i].NgaySinh, list[i].MatKhau, list[i].ChucVu, list[i].TinhTrang);
+                dgv_ListNV.Rows.Add(list[i].MaNV, list[i].TenNV, list[i].CCCD, list[i].DiaChi, list[i].DienThoai, list[i].ChucVu, list[i].MatKhau, list[i].GhiChu);
             }
         }
 
@@ -81,7 +81,7 @@ namespace GUI
                 curd1.txtName.Text = dgv_ListNV.Rows[e.RowIndex].Cells[1].Value.ToString();
                 curd1.txtGender.Text = dgv_ListNV.Rows[e.RowIndex].Cells[2].Value.ToString();
                 curd1.txtPhone.Text = dgv_ListNV.Rows[e.RowIndex].Cells[3].Value.ToString();
-                curd1.dtDob.Text = dgv_ListNV.Rows[e.RowIndex].Cells[4].Value.ToString(); //bug cập nhật xong thì dữ liệu sdt bị ghi đè bằng ngày sinh
+                curd1.dtDob.Text = dgv_ListNV.Rows[e.RowIndex].Cells[4].Value.ToString(); 
                 curd1.txtPasswrod.Text = dgv_ListNV.Rows[e.RowIndex].Cells[5].Value.ToString();
                 curd1.txtPosition.Text = dgv_ListNV.Rows[e.RowIndex].Cells[6].Value.ToString();
                 curd1.txtNote.Text = dgv_ListNV.Rows[e.RowIndex].Cells[7].Value.ToString();
@@ -95,7 +95,7 @@ namespace GUI
                 list = NhanVienBLL.LoadListNV();
                 for (int i = 0; i < list.Count; i++)
                 {
-                    dgv_ListNV.Rows.Add(list[i].MaNV, list[i].TenNV, list[i].GioiTinh, list[i].SDT, list[i].NgaySinh, list[i].MatKhau, list[i].ChucVu, list[i].TinhTrang);
+                    dgv_ListNV.Rows.Add(list[i].MaNV, list[i].TenNV, list[i].CCCD, list[i].DiaChi, list[i].DienThoai, list[i].ChucVu, list[i].MatKhau, list[i].GhiChu);
                 }
             }
 
@@ -110,14 +110,14 @@ namespace GUI
                 list = NhanVienBLL.LoadListNV();
                 for (int i = 0; i < list.Count; i++)
                 {
-                    dgv_ListNV.Rows.Add(list[i].MaNV, list[i].TenNV, list[i].GioiTinh, list[i].SDT, list[i].NgaySinh, list[i].MatKhau, list[i].ChucVu, list[i].TinhTrang);
+                    dgv_ListNV.Rows.Add(list[i].MaNV, list[i].TenNV, list[i].CCCD, list[i].DiaChi, list[i].DienThoai, list[i].ChucVu, list[i].MatKhau, list[i].GhiChu);
                 }
             }
         }
 
         private void dgv_ListNV_RowEnter(object sender, DataGridViewCellEventArgs e)
         {
-            nhanvien.MaNV = dgv_ListNV.Rows[e.RowIndex].Cells[0].Value.ToString();
+            nhanvien.MaNV = int.Parse(dgv_ListNV.Rows[e.RowIndex].Cells[0].Value.ToString());
         }
     }
 }

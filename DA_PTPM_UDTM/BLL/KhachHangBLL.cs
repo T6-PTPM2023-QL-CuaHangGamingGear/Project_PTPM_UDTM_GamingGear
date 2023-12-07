@@ -27,7 +27,7 @@ namespace BLL
         {
             return KhachHangDAO.GetListKhachHang();
         }
-        public static List<KhachHang> SearchKH(string text)
+        public static List<KhachHang> SearchKH(int text)
         {
             return KhachHangDAO.SearchKhachHang(text);
         }

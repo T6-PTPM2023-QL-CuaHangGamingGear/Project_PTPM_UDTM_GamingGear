@@ -8,6 +8,6 @@ namespace DAL.DAO
 {
     public class DBDataContext
     {
-        public static DB_GearShopDataContext db = new DB_GearShopDataContext();
+        public static GEARSHOP_DBDataContext db = new GEARSHOP_DBDataContext();
     }
 }

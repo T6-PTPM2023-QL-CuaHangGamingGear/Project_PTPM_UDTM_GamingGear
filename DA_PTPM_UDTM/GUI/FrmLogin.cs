@@ -15,7 +15,7 @@ namespace GUI
 {
     public partial class FrmLogin : Form
     {
-        DB_GearShopDataContext db = new DB_GearShopDataContext();
+        GEARSHOP_DBDataContext db = new GEARSHOP_DBDataContext();
         public FrmLogin()
         {
             InitializeComponent();
@@ -34,7 +34,7 @@ namespace GUI
             }
             else
             {
-                var NhanVien = (from nv in db.NhanViens where nv.MaNV == txtMaNV.Text select nv).First();
+                var NhanVien = (from nv in db.NhanViens where nv.MaNV.ToString() == txtMaNV.Text select nv).First();
                 if (NhanVien.MatKhau == txtMatKhau.Text)
                 {
                     MessageBox.Show("Welcome back " + txtMaNV.Text);
