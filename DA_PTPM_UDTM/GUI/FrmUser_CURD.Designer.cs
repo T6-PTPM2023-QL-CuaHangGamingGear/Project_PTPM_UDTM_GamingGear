@@ -34,7 +34,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.uC_FrmCURD3 = new GUI.UserControl_FrmList.UC_FrmCURD();
+            this.uC_FrmCURD4 = new GUI.UserControl_FrmList.UC_FrmCURD();
             this.btnClose = new Guna.UI2.WinForms.Guna2Button();
             this.btnUpdate = new Guna.UI2.WinForms.Guna2Button();
             this.btnSave = new Guna.UI2.WinForms.Guna2Button();
@@ -84,19 +84,21 @@
             // guna2Elipse2
             // 
             this.guna2Elipse2.BorderRadius = 21;
+            this.guna2Elipse2.TargetControl = this.panel1;
             // 
             // guna2Elipse3
             // 
             this.guna2Elipse3.BorderRadius = 10;
+            this.guna2Elipse3.TargetControl = this.guna2Panel1;
             // 
-            // uC_FrmCURD3
+            // uC_FrmCURD4
             // 
-            this.uC_FrmCURD3.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.uC_FrmCURD3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uC_FrmCURD3.Location = new System.Drawing.Point(0, 0);
-            this.uC_FrmCURD3.Name = "uC_FrmCURD3";
-            this.uC_FrmCURD3.Size = new System.Drawing.Size(569, 577);
-            this.uC_FrmCURD3.TabIndex = 0;
+            this.uC_FrmCURD4.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.uC_FrmCURD4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uC_FrmCURD4.Location = new System.Drawing.Point(0, 0);
+            this.uC_FrmCURD4.Name = "uC_FrmCURD4";
+            this.uC_FrmCURD4.Size = new System.Drawing.Size(569, 577);
+            this.uC_FrmCURD4.TabIndex = 0;
             // 
             // btnClose
             // 
@@ -112,11 +114,11 @@
             this.btnClose.HoverState.FillColor = System.Drawing.Color.Transparent;
             this.btnClose.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
             this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
-            this.btnClose.Location = new System.Drawing.Point(528, 0);
+            this.btnClose.Location = new System.Drawing.Point(523, 2);
             this.btnClose.Name = "btnClose";
             this.btnClose.PressedColor = System.Drawing.Color.BlueViolet;
             this.btnClose.Size = new System.Drawing.Size(41, 42);
-            this.btnClose.TabIndex = 21;
+            this.btnClose.TabIndex = 28;
             // 
             // btnUpdate
             // 
@@ -133,10 +135,10 @@
             this.btnUpdate.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.Color.Black;
             this.btnUpdate.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(202)))), ((int)(((byte)(21)))));
-            this.btnUpdate.Location = new System.Drawing.Point(383, 539);
+            this.btnUpdate.Location = new System.Drawing.Point(378, 541);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(79, 34);
-            this.btnUpdate.TabIndex = 20;
+            this.btnUpdate.TabIndex = 27;
             this.btnUpdate.Text = "Update";
             // 
             // btnSave
@@ -153,10 +155,10 @@
             this.btnSave.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.Black;
             this.btnSave.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(167)))), ((int)(((byte)(39)))));
-            this.btnSave.Location = new System.Drawing.Point(383, 539);
+            this.btnSave.Location = new System.Drawing.Point(378, 541);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(79, 34);
-            this.btnSave.TabIndex = 19;
+            this.btnSave.TabIndex = 26;
             this.btnSave.Text = "Save";
             // 
             // btnCancel
@@ -173,10 +175,10 @@
             this.btnCancel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.ForeColor = System.Drawing.Color.Black;
             this.btnCancel.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(1)))), ((int)(((byte)(1)))));
-            this.btnCancel.Location = new System.Drawing.Point(468, 539);
+            this.btnCancel.Location = new System.Drawing.Point(463, 541);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(79, 34);
-            this.btnCancel.TabIndex = 18;
+            this.btnCancel.TabIndex = 25;
             this.btnCancel.Text = "Cancel";
             // 
             // guna2Panel1
@@ -185,10 +187,10 @@
             this.guna2Panel1.Controls.Add(this.label4);
             this.guna2Panel1.Controls.Add(this.label3);
             this.guna2Panel1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Panel1.Location = new System.Drawing.Point(10, 78);
+            this.guna2Panel1.Location = new System.Drawing.Point(5, 80);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(133, 32);
-            this.guna2Panel1.TabIndex = 15;
+            this.guna2Panel1.TabIndex = 22;
             this.guna2Panel1.Tag = "";
             // 
             // label4
@@ -230,10 +232,10 @@
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.txtName);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Location = new System.Drawing.Point(18, 66);
+            this.panel1.Location = new System.Drawing.Point(28, 65);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(514, 454);
-            this.panel1.TabIndex = 17;
+            this.panel1.TabIndex = 24;
             // 
             // txtAddress
             // 
@@ -489,10 +491,10 @@
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(140)))), ((int)(((byte)(255)))));
             this.label2.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(220, 12);
+            this.label2.Location = new System.Drawing.Point(215, 14);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(123, 25);
-            this.label2.TabIndex = 16;
+            this.label2.TabIndex = 23;
             this.label2.Text = "USER CURD";
             // 
             // FrmUser_CURD
@@ -506,7 +508,7 @@
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.uC_FrmCURD3);
+            this.Controls.Add(this.uC_FrmCURD4);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmUser_CURD";
             this.Text = "FrmUser_CURD";
@@ -553,5 +555,6 @@
         public ThietKeControl.txtChiNhapChu txtName;
         public System.Windows.Forms.Label label5;
         public System.Windows.Forms.Label label2;
+        private UserControl_FrmList.UC_FrmCURD uC_FrmCURD4;
     }
 }

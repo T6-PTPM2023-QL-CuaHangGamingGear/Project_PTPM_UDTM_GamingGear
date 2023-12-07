@@ -39,8 +39,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.GNbtn_Add = new Guna.UI2.WinForms.Guna2Button();
-            this.dgv_ListKH = new System.Windows.Forms.DataGridView();
-            this.uC_FrmNghiepVu1 = new GUI.UserControl_FrmList.UC_FrmNghiepVu();
+            this.dgv_ListCL = new System.Windows.Forms.DataGridView();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -50,9 +49,11 @@
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Edit = new System.Windows.Forms.DataGridViewImageColumn();
             this.Delete = new System.Windows.Forms.DataGridViewImageColumn();
+            this.uC_FrmNghiepVu1 = new GUI.UserControl_FrmList.UC_FrmNghiepVu();
+            this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_ListKH)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_ListCL)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Elipse1
@@ -134,12 +135,12 @@
             this.GNbtn_Add.TabIndex = 0;
             this.GNbtn_Add.Click += new System.EventHandler(this.GNbtn_Add_Click);
             // 
-            // dgv_ListKH
+            // dgv_ListCL
             // 
-            this.dgv_ListKH.AllowUserToAddRows = false;
-            this.dgv_ListKH.BackgroundColor = System.Drawing.Color.White;
-            this.dgv_ListKH.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgv_ListKH.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgv_ListCL.AllowUserToAddRows = false;
+            this.dgv_ListCL.BackgroundColor = System.Drawing.Color.White;
+            this.dgv_ListCL.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgv_ListCL.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(212)))));
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -147,10 +148,10 @@
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(174)))), ((int)(((byte)(63)))));
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_ListKH.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgv_ListKH.ColumnHeadersHeight = 30;
-            this.dgv_ListKH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dgv_ListKH.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgv_ListCL.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgv_ListCL.ColumnHeadersHeight = 30;
+            this.dgv_ListCL.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dgv_ListCL.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column2,
             this.Column3,
             this.Column8,
@@ -167,10 +168,10 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(174)))), ((int)(((byte)(63)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_ListKH.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dgv_ListKH.EnableHeadersVisualStyles = false;
-            this.dgv_ListKH.Location = new System.Drawing.Point(20, 115);
-            this.dgv_ListKH.Name = "dgv_ListKH";
+            this.dgv_ListCL.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dgv_ListCL.EnableHeadersVisualStyles = false;
+            this.dgv_ListCL.Location = new System.Drawing.Point(20, 115);
+            this.dgv_ListCL.Name = "dgv_ListCL";
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(88)))), ((int)(((byte)(187)))));
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -178,21 +179,12 @@
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_ListKH.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.dgv_ListKH.RowHeadersVisible = false;
-            this.dgv_ListKH.Size = new System.Drawing.Size(1037, 422);
-            this.dgv_ListKH.TabIndex = 8;
-            this.dgv_ListKH.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_ListKH_CellContentClick);
-            this.dgv_ListKH.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_ListKH_RowEnter);
-            // 
-            // uC_FrmNghiepVu1
-            // 
-            this.uC_FrmNghiepVu1.BackColor = System.Drawing.Color.White;
-            this.uC_FrmNghiepVu1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uC_FrmNghiepVu1.Location = new System.Drawing.Point(0, 0);
-            this.uC_FrmNghiepVu1.Name = "uC_FrmNghiepVu1";
-            this.uC_FrmNghiepVu1.Size = new System.Drawing.Size(1081, 537);
-            this.uC_FrmNghiepVu1.TabIndex = 0;
+            this.dgv_ListCL.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dgv_ListCL.RowHeadersVisible = false;
+            this.dgv_ListCL.Size = new System.Drawing.Size(1037, 422);
+            this.dgv_ListCL.TabIndex = 8;
+            this.dgv_ListCL.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_ListKH_CellContentClick);
+            this.dgv_ListCL.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_ListKH_RowEnter);
             // 
             // Column2
             // 
@@ -255,12 +247,26 @@
             this.Delete.Name = "Delete";
             this.Delete.Width = 5;
             // 
+            // uC_FrmNghiepVu1
+            // 
+            this.uC_FrmNghiepVu1.BackColor = System.Drawing.Color.White;
+            this.uC_FrmNghiepVu1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uC_FrmNghiepVu1.Location = new System.Drawing.Point(0, 0);
+            this.uC_FrmNghiepVu1.Name = "uC_FrmNghiepVu1";
+            this.uC_FrmNghiepVu1.Size = new System.Drawing.Size(1081, 537);
+            this.uC_FrmNghiepVu1.TabIndex = 0;
+            // 
+            // guna2Elipse2
+            // 
+            this.guna2Elipse2.BorderRadius = 30;
+            this.guna2Elipse2.TargetControl = this.dgv_ListCL;
+            // 
             // FrmClient
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1081, 537);
-            this.Controls.Add(this.dgv_ListKH);
+            this.Controls.Add(this.dgv_ListCL);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.guna2PictureBox1);
             this.Controls.Add(this.label1);
@@ -271,7 +277,7 @@
             this.Load += new System.EventHandler(this.FrmClient_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_ListKH)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_ListCL)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -286,7 +292,7 @@
         private System.Windows.Forms.Panel panel2;
         private Guna.UI2.WinForms.Guna2TextBox txtSearch;
         private Guna.UI2.WinForms.Guna2Button GNbtn_Add;
-        private System.Windows.Forms.DataGridView dgv_ListKH;
+        private System.Windows.Forms.DataGridView dgv_ListCL;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
@@ -296,5 +302,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
         private System.Windows.Forms.DataGridViewImageColumn Edit;
         private System.Windows.Forms.DataGridViewImageColumn Delete;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
     }
 }

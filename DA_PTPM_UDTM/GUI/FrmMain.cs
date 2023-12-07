@@ -37,7 +37,7 @@ namespace GUI
 
         private void btnNhanVien_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new FrmUser());
         }
 
         private void btnKhachHang_Click(object sender, EventArgs e)
@@ -48,6 +48,7 @@ namespace GUI
 
         private void btnSanPham_Click(object sender, EventArgs e)
         {
+            openChildForm(new FrmProduct());
 
         }
 

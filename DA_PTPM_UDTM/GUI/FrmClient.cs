@@ -28,17 +28,17 @@ namespace GUI
             list = KhachHangBLL.LoadListKH();
             for (int i = 0; i < list.Count; i++)
             {
-                dgv_ListKH.Rows.Add(list[i].MaKH, list[i].TenKH, list[i].DiaChi, list[i].DienThoai, list[i].Email, list[i].MatKhau, list[i].GhiChu);
+                dgv_ListCL.Rows.Add(list[i].MaKH, list[i].TenKH, list[i].DiaChi, list[i].DienThoai, list[i].Email, list[i].MatKhau, list[i].GhiChu);
             }
         }
 
         private void txtSearch_TextChanged(object sender, EventArgs e)
         {
-            dgv_ListKH.Rows.Clear();
+            dgv_ListCL.Rows.Clear();
             list = KhachHangBLL.SearchKH(txtSearch.Text);
             for (int i = 0; i < list.Count; i++)
             {
-                dgv_ListKH.Rows.Add(list[i].MaKH, list[i].TenKH, list[i].DiaChi, list[i].DienThoai, list[i].Email, list[i].MatKhau, list[i].GhiChu);
+                dgv_ListCL.Rows.Add(list[i].MaKH, list[i].TenKH, list[i].DiaChi, list[i].DienThoai, list[i].Email, list[i].MatKhau, list[i].GhiChu);
             }
 
         }
@@ -50,38 +50,38 @@ namespace GUI
             curd.btnUpdate.Visible = false;
             curd.btnSave.Visible = true;
             curd.ShowDialog();
-            dgv_ListKH.Rows.Clear();
+            dgv_ListCL.Rows.Clear();
             list = KhachHangBLL.LoadListKH();
             for (int i = 0; i < list.Count; i++)
             {
-                dgv_ListKH.Rows.Add(list[i].MaKH, list[i].TenKH, list[i].DiaChi, list[i].DienThoai, list[i].Email, list[i].MatKhau, list[i].GhiChu);
+                dgv_ListCL.Rows.Add(list[i].MaKH, list[i].TenKH, list[i].DiaChi, list[i].DienThoai, list[i].Email, list[i].MatKhau, list[i].GhiChu);
             }
         }
 
         private void dgv_ListKH_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            string colName = dgv_ListKH.Columns[e.ColumnIndex].Name;
+            string colName = dgv_ListCL.Columns[e.ColumnIndex].Name;
             if (colName == "Edit")
             {
                 FrmClient_CURD curd1 = new FrmClient_CURD(this);
-                curd1.txtID.Text = dgv_ListKH.Rows[e.RowIndex].Cells[0].Value.ToString();
-                curd1.txtName.Text = dgv_ListKH.Rows[e.RowIndex].Cells[1].Value.ToString();
-                curd1.txtAddress.Text = dgv_ListKH.Rows[e.RowIndex].Cells[2].Value.ToString();
-                curd1.txtPhone.Text = dgv_ListKH.Rows[e.RowIndex].Cells[3].Value.ToString();
-                curd1.txtEmail.Text = dgv_ListKH.Rows[e.RowIndex].Cells[4].Value.ToString();
-                curd1.txtPasswrod.Text = dgv_ListKH.Rows[e.RowIndex].Cells[5].Value.ToString();
-                curd1.txtNote.Text = dgv_ListKH.Rows[e.RowIndex].Cells[6].Value.ToString();
+                curd1.txtID.Text = dgv_ListCL.Rows[e.RowIndex].Cells[0].Value.ToString();
+                curd1.txtName.Text = dgv_ListCL.Rows[e.RowIndex].Cells[1].Value.ToString();
+                curd1.txtAddress.Text = dgv_ListCL.Rows[e.RowIndex].Cells[2].Value.ToString();
+                curd1.txtPhone.Text = dgv_ListCL.Rows[e.RowIndex].Cells[3].Value.ToString();
+                curd1.txtEmail.Text = dgv_ListCL.Rows[e.RowIndex].Cells[4].Value.ToString();
+                curd1.txtPasswrod.Text = dgv_ListCL.Rows[e.RowIndex].Cells[5].Value.ToString();
+                curd1.txtNote.Text = dgv_ListCL.Rows[e.RowIndex].Cells[6].Value.ToString();
 
                 curd1.txtID.Enabled = false;
                 curd1.btnSave.Visible = false;
                 curd1.btnUpdate.Visible = true;
                 curd1.btnUpdate.Enabled = true;
                 curd1.ShowDialog();
-                dgv_ListKH.Rows.Clear();
+                dgv_ListCL.Rows.Clear();
                 list = KhachHangBLL.LoadListKH();
                 for (int i = 0; i < list.Count; i++)
                 {
-                    dgv_ListKH.Rows.Add(list[i].MaKH, list[i].TenKH, list[i].DiaChi, list[i].DienThoai, list[i].Email, list[i].MatKhau, list[i].GhiChu);
+                    dgv_ListCL.Rows.Add(list[i].MaKH, list[i].TenKH, list[i].DiaChi, list[i].DienThoai, list[i].Email, list[i].MatKhau, list[i].GhiChu);
                 }
             }
 
@@ -92,18 +92,18 @@ namespace GUI
                     KhachHangBLL.DeleteKH(khachhang.MaKH.ToString());
                     MessageBox.Show("Delete success", title, MessageBoxButtons.OK, MessageBoxIcon.Question);
                 }
-                dgv_ListKH.Rows.Clear();
+                dgv_ListCL.Rows.Clear();
                 list = KhachHangBLL.LoadListKH();
                 for (int i = 0; i < list.Count; i++)
                 {
-                    dgv_ListKH.Rows.Add(list[i].MaKH, list[i].TenKH, list[i].DiaChi, list[i].DienThoai, list[i].Email, list[i].MatKhau, list[i].GhiChu);
+                    dgv_ListCL.Rows.Add(list[i].MaKH, list[i].TenKH, list[i].DiaChi, list[i].DienThoai, list[i].Email, list[i].MatKhau, list[i].GhiChu);
                 }
             }
         }
 
         private void dgv_ListKH_RowEnter(object sender, DataGridViewCellEventArgs e)
         {
-            khachhang.MaKH =int.Parse(dgv_ListKH.Rows[e.RowIndex].Cells[0].Value.ToString());
+            khachhang.MaKH =int.Parse(dgv_ListCL.Rows[e.RowIndex].Cells[0].Value.ToString());
 
         }
     }
