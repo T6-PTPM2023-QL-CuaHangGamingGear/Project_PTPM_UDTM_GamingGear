@@ -37,7 +37,7 @@ Mục tiêu của dự án là giúp cho việc quản lý sản phẩm, tồn k
   </tr>
   <tr>
     <td></td>
-    <td>Quản lý TT sản phẩm<br>Quản lý TT người dùng<br>Quản lý TT khách hàng<br>Quản lý TT hóa đơn</td>
+    <td>Quản lý TT sản phẩm<br>Quản lý TT người dùng<br>Quản lý TT khách hàng<br>Quản lý TT nhập hàng</td>
   </tr>
   <tr>
     <th>Web</th>
