@@ -442,6 +442,7 @@
             this.btnCancel.Size = new System.Drawing.Size(79, 34);
             this.btnCancel.TabIndex = 20;
             this.btnCancel.Text = "Cancel";
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // uC_FrmCURD1
             // 

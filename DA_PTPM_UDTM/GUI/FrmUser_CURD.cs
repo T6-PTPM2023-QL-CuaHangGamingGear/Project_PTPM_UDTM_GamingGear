@@ -98,12 +98,15 @@ namespace GUI
             }
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
+
+
+
+        private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void btnCancel_Click(object sender, EventArgs e)
+        private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
         }

@@ -238,9 +238,10 @@
             // 
             // Column7
             // 
-            this.Column7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column7.HeaderText = "Price";
             this.Column7.Name = "Column7";
+            this.Column7.Width = 62;
             // 
             // Column9
             // 

@@ -41,7 +41,7 @@ namespace GUI
             return null;
         }
 
-
+        SanPhamDAO spdao = new SanPhamDAO();
         SanPhamBLL sp = new SanPhamBLL();
         FrmProduct productform;
         bool check = false;
@@ -54,28 +54,27 @@ namespace GUI
 
         private void FrmProduct_CURD_Load(object sender, EventArgs e)
         {
-            //SanPhamDAO spdao = new SanPhamDAO();
-            //foreach (var item in spdao.tenLoaiSP()) //Load CBB thay vì lấy mã thì xuất ra tên loại SP
-            //{
-            //    cbbType.Items.Add(item.TenLoaiSP);
-            //    if (item.MaLoaiSP.Equals(spdao.returnValueLoai().MaLoaiSP))
-            //    {
-            //        cbbType.SelectedItem = item.TenLoaiSP;
-            //    }
-            //}
+            foreach (var item in spdao.tenLoaiSP()) //Load CBB  lấy mã và xuất ra tên loại SP
+            {
+                cbbType.Items.Add(item.TenLoaiSP);
+                if (item.MaLoaiSP.Equals(spdao.returnValueLoai().MaLoaiSP))
+                {
+                    cbbType.SelectedItem = item.TenLoaiSP;
+                }
+            }
 
-            //foreach (var item in spdao.tenHangSX())
-            //{
-            //    cbbBrand.Items.Add(item.TenHangSX);
-            //    if (item.MaHangSX.Equals(spdao.returnValueHang().MaHangSX))
-            //    {
-            //        cbbBrand.SelectedItem = item.TenHangSX;
-            //    }
-            //}
+            foreach (var item in spdao.tenHangSX())
+            {
+                cbbBrand.Items.Add(item.TenHangSX);
+                if (item.MaHangSX.Equals(spdao.returnValueHang().MaHangSX))
+                {
+                    cbbBrand.SelectedItem = item.TenHangSX;
+                }
+            }
         }
         public void CheckField()
         {
-            if (txtName.Text == "" | txtName.Text == "" | txtPrice.Text == "" | txtQuantity.Text == "")
+            if (txtName.Text == "" | txtName.Text == "" | txtPrice.Text == "" | txtQuantity.Text == "" | GN_Images.Image == null)
             {
                 MessageBox.Show("No information entered", "Error");
                 return;
@@ -98,8 +97,12 @@ namespace GUI
                 {
                     SanPham data = new SanPham();
                     data.TenSP = txtName.Text;
-                    data.MaLoaiSP = Convert.ToInt32(txtType.Text);
-                    data.MaHangSX = Convert.ToInt32(txtBrand.Text);
+
+                    data.MaLoaiSP = spdao.GetValueLoaiSP(cbbType.Text);
+                    data.MaHangSX = spdao.GetValueHangSX(cbbBrand.Text);
+
+                    //data.MaLoaiSP = Convert.ToInt32(txtType.Text);
+                    //data.MaHangSX = Convert.ToInt32(txtBrand.Text);
                     data.HinhAnh = selectedPath;
                     data.GiaSP = Convert.ToDecimal(txtPrice.Text);
                     data.SoLuong = Convert.ToInt32(txtQuantity.Text);
@@ -124,8 +127,8 @@ namespace GUI
                 {
                     SanPham data = new SanPham();
                     data.TenSP = txtName.Text;
-                    data.MaLoaiSP = Convert.ToInt32(txtType.Text);
-                    data.MaHangSX = Convert.ToInt32(txtBrand.Text);
+                    data.MaLoaiSP = spdao.GetValueLoaiSP(cbbType.Text);
+                    data.MaHangSX = spdao.GetValueHangSX(cbbBrand.Text);
                     data.HinhAnh = selectedPath;
                     data.GiaSP = Convert.ToDecimal(txtPrice.Text);
                     data.SoLuong = Convert.ToInt32(txtQuantity.Text);
@@ -146,6 +149,11 @@ namespace GUI
             selectedPath = OpenFile();
             if (!String.IsNullOrEmpty(selectedPath))
                 GN_Images.Image = Image.FromFile(selectedPath);
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

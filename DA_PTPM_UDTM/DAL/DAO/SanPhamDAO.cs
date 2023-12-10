@@ -108,14 +108,41 @@ namespace DAL.DAO
             return list;
         }
 
-        public void getValue(string loaisp, string hangsx)
+        //public void getValue(string loaisp, string hangsx)
+        //{
+        //    listHangSX.Clear();
+        //    listLoaiSP.Clear();
+        //    listHangSX = tenHangSX();
+        //    listLoaiSP = tenLoaiSP();
+        //    valueCbHang = listHangSX.Find(x => x.TenHangSX == hangsx);
+        //    valueCbLoai = listLoaiSP.Find(x => x.TenLoaiSP == loaisp);
+        //}
+
+
+        //public void getValueLoaiSP(string loaisp)
+        //{
+        //    listLoaiSP.Clear();
+        //    listLoaiSP = tenLoaiSP();
+        //    valueCbLoai = listLoaiSP.Find(x => x.TenLoaiSP == loaisp);
+        //}
+
+
+
+        public int? GetValueLoaiSP(string loaisp)
+        {
+            listLoaiSP.Clear();
+            listLoaiSP = tenLoaiSP();
+            var valueCbLoai = listLoaiSP.Find(x => x.TenLoaiSP == loaisp);
+            return valueCbLoai?.MaLoaiSP;
+        }
+
+
+        public int? GetValueHangSX(string hangsx)
         {
             listHangSX.Clear();
-            listLoaiSP.Clear();
             listHangSX = tenHangSX();
-            listLoaiSP = tenLoaiSP();
-            valueCbHang = listHangSX.Find(x => x.TenHangSX == hangsx);
-            valueCbLoai = listLoaiSP.Find(x => x.TenLoaiSP == loaisp);
+            var valueCbHang = listHangSX.Find(x => x.TenHangSX == hangsx);
+            return valueCbHang?.MaHangSX;
         }
 
         public HangSX_DTO returnValueHang()

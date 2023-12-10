@@ -105,13 +105,17 @@ namespace GUI
                 }
                 else
                 {
-                    curd1.GN_Images.Image = Image.FromFile("../../../../img/error.png");
-                    selectedPath = "../../../../img/error.png";
-                    
-
+                    string errorPath = Path.Combine("..", "..", "..", "img", "error.png");
+                    curd1.GN_Images.Image = Image.FromFile(errorPath);
+                    selectedPath = errorPath;
                 }
 
-                spdao.getValue(dgv_ListPD.Rows[e.RowIndex].Cells[3].Value.ToString(), dgv_ListPD.Rows[e.RowIndex].Cells[2].Value.ToString());
+                //spdao.GetValueLoaiSP(dgv_ListPD.Rows[e.RowIndex].Cells[3].Value.ToString()); //load cbb loaisp, hangsx
+                //spdao.GetValueHangSX(dgv_ListPD.Rows[e.RowIndex].Cells[2].Value.ToString()); //load cbb loaisp, hangsx
+
+
+                //curd1.cbbType.Text = dgv_ListPD.Rows[e.RowIndex].Cells[2].Value.ToString();
+                //curd1.cbbBrand.Text = dgv_ListPD.Rows[e.RowIndex].Cells[3].Value.ToString();
 
                 curd1.txtPrice.Text = dgv_ListPD.Rows[e.RowIndex].Cells[5].Value.ToString();
                 curd1.txtQuantity.Text = dgv_ListPD.Rows[e.RowIndex].Cells[6].Value.ToString();
