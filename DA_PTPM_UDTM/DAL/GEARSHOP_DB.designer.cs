@@ -22,7 +22,7 @@ namespace DAL
 	using System;
 	
 	
-	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="DB_GEARSHOP")]
+	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="DB_GEARSHOP_DATA")]
 	public partial class GEARSHOP_DBDataContext : System.Data.Linq.DataContext
 	{
 		
@@ -60,7 +60,7 @@ namespace DAL
     #endregion
 		
 		public GEARSHOP_DBDataContext() : 
-				base(global::DAL.Properties.Settings.Default.DB_GEARSHOPConnectionString, mappingSource)
+				base(global::DAL.Properties.Settings.Default.DB_GEARSHOP_DATAConnectionString, mappingSource)
 		{
 			OnCreated();
 		}
@@ -2041,7 +2041,7 @@ namespace DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TenSP", DbType="NVarChar(50)")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TenSP", DbType="NVarChar(MAX)")]
 		public string TenSP
 		{
 			get
@@ -2169,7 +2169,7 @@ namespace DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MoTa", DbType="NVarChar(300)")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MoTa", DbType="NVarChar(MAX)")]
 		public string MoTa
 		{
 			get

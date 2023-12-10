@@ -43,5 +43,16 @@ namespace DAL.Properties {
                 return ((string)(this["DB_GEARSHOPConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-TMBDK5T;Initial Catalog=DB_GEARSHOP_DATA;Integrated Security=" +
+            "True")]
+        public string DB_GEARSHOP_DATAConnectionString {
+            get {
+                return ((string)(this["DB_GEARSHOP_DATAConnectionString"]));
+            }
+        }
     }
 }

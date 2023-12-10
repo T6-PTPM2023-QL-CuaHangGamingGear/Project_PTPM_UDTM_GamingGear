@@ -41,6 +41,7 @@
             this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.GNbtn_Add = new Guna.UI2.WinForms.Guna2Button();
             this.dgv_ListPD = new System.Windows.Forms.DataGridView();
+            this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -51,7 +52,6 @@
             this.Note = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Edit = new System.Windows.Forms.DataGridViewImageColumn();
             this.Delete = new System.Windows.Forms.DataGridViewImageColumn();
-            this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_ListPD)).BeginInit();
@@ -197,11 +197,17 @@
             this.dgv_ListPD.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_ListPD_CellContentClick);
             this.dgv_ListPD.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_ListPD_RowEnter);
             // 
+            // guna2Elipse2
+            // 
+            this.guna2Elipse2.BorderRadius = 30;
+            this.guna2Elipse2.TargetControl = this.dgv_ListPD;
+            // 
             // Column2
             // 
-            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column2.HeaderText = "ID Product";
             this.Column2.Name = "Column2";
+            this.Column2.Width = 99;
             // 
             // Column3
             // 
@@ -226,10 +232,9 @@
             // 
             // Column4
             // 
-            this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Column4.HeaderText = "Image";
             this.Column4.Name = "Column4";
-            this.Column4.Width = 73;
             // 
             // Column7
             // 
@@ -239,6 +244,7 @@
             // 
             // Column9
             // 
+            this.Column9.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Column9.HeaderText = "Quantity";
             this.Column9.Name = "Column9";
             // 
@@ -262,11 +268,6 @@
             this.Delete.Image = ((System.Drawing.Image)(resources.GetObject("Delete.Image")));
             this.Delete.Name = "Delete";
             this.Delete.Width = 5;
-            // 
-            // guna2Elipse2
-            // 
-            this.guna2Elipse2.BorderRadius = 30;
-            this.guna2Elipse2.TargetControl = this.dgv_ListPD;
             // 
             // FrmProduct
             // 

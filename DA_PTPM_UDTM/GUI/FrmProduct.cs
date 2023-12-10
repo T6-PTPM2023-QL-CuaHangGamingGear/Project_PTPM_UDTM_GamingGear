@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,6 +16,32 @@ namespace GUI
 {
     public partial class FrmProduct : Form
     {
+
+        //thiết lập hình ảnh
+        String selectedPath;
+        public string OpenFile()
+        {
+            string filePath = "";
+
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+
+            // Thiết lập các thuộc tính cho hộp thoại chọn file
+            openFileDialog.Title = "Chọn file";  // Tiêu đề của hộp thoại
+            openFileDialog.Filter = "Tất cả các file (*.*)|*.*";  // Bộ lọc file (ở đây là tất cả các file)
+            openFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments); // Thư mục mặc định để mở
+
+            DialogResult result = openFileDialog.ShowDialog();
+
+            // Kiểm tra kết quả trả về từ hộp thoại
+            if (result == DialogResult.OK)
+            {
+                filePath = openFileDialog.FileName; // Lấy đường dẫn đến file đã chọn
+                return filePath;
+            }
+            return null;
+        }
+
+
         List<SanPham> list = new List<SanPham>();
         SanPhamBLL sp = new SanPhamBLL();
         public SanPham sanpham = new SanPham();
@@ -68,8 +95,21 @@ namespace GUI
                 FrmProduct_CURD curd1 = new FrmProduct_CURD(this);
                 curd1.txtID.Text = dgv_ListPD.Rows[e.RowIndex].Cells[0].Value.ToString();
                 curd1.txtName.Text = dgv_ListPD.Rows[e.RowIndex].Cells[1].Value.ToString();
-                
-                /// chưa load được hình ảnh
+
+                //load hình ảnh
+
+                if (File.Exists(dgv_ListPD.Rows[e.RowIndex].Cells[4].Value.ToString()))
+                {
+                    curd1.GN_Images.Image = Image.FromFile(dgv_ListPD.Rows[e.RowIndex].Cells[4].Value.ToString());
+                    selectedPath = dgv_ListPD.Rows[e.RowIndex].Cells[4].Value.ToString();
+                }
+                else
+                {
+                    curd1.GN_Images.Image = Image.FromFile("../../../../img/error.png");
+                    selectedPath = "../../../../img/error.png";
+                    
+
+                }
 
                 spdao.getValue(dgv_ListPD.Rows[e.RowIndex].Cells[3].Value.ToString(), dgv_ListPD.Rows[e.RowIndex].Cells[2].Value.ToString());
 

@@ -10,7 +10,12 @@ namespace DAL.DAO
     {
         public static List<PhieuNhap> GetListPhieuNhap()
         {
-            return db.KhachHangs.ToList();
+            return db.PhieuNhaps.ToList();
         }
+        public static List<PhieuNhap> SearchPhieuNhap(String data)
+        {
+            return db.PhieuNhaps.Where(nv => nv.MaPN.ToString().Contains(data.ToString()) || nv.MaNV.ToString().Contains(data.ToString())).ToList();
+        }
+
     }
 }
