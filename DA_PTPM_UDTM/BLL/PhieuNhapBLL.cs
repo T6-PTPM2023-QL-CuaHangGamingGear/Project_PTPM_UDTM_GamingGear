@@ -29,12 +29,6 @@ namespace BLL
             return PhieuNhapDAO.GetListPhieuNhap();
         }
 
-        public static List<ChiTietPhieuNhap> LoadListCTPN(int data)
-        {
-            return PhieuNhapDAO.GetListCTPhieuNhap(data);
-        }
-
-
         public static List<PhieuNhap> SearchPN(string text)
         {
             return PhieuNhapDAO.SearchPhieuNhap(text);

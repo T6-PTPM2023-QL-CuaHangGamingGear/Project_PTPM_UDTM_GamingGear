@@ -98,6 +98,12 @@
     <Compile Include="FrmOrderEntry_CURD.Designer.cs">
       <DependentUpon>FrmOrderEntry_CURD.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmOrderEntry_DETAIL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOrderEntry_DETAIL.Designer.cs">
+      <DependentUpon>FrmOrderEntry_DETAIL.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmProduct.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -153,6 +159,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmOrderEntry_CURD.resx">
       <DependentUpon>FrmOrderEntry_CURD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOrderEntry_DETAIL.resx">
+      <DependentUpon>FrmOrderEntry_DETAIL.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmProduct.resx">
       <DependentUpon>FrmProduct.cs</DependentUpon>

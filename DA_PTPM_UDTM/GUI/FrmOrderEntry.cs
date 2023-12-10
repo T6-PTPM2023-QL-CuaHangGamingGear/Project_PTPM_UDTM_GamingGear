@@ -51,7 +51,7 @@ namespace GUI
             curd.btnUpdate.Visible = false;
             curd.btnSave.Enabled = true;
             curd.btnSave.Visible = true;
-            curd.txtDateImport.Enabled = false;
+            curd.dtpDateImport.Enabled = true;
 
             curd.ShowDialog();
             dgv_ListOrder.Rows.Clear();
@@ -73,11 +73,12 @@ namespace GUI
                 curd1.btnSave.Enabled = false;
                 curd1.btnUpdate.Enabled = true;
                 curd1.btnUpdate.Visible = true;
+                curd1.dtpDateImport.Enabled = true;
 
                 curd1.txtID.Text = dgv_ListOrder.Rows[e.RowIndex].Cells[0].Value.ToString();
                 curd1.cbbSupplier.SelectedText = dgv_ListOrder.Rows[e.RowIndex].Cells[1].Value.ToString();
                 curd1.cbbUser.SelectedText = dgv_ListOrder.Rows[e.RowIndex].Cells[2].Value.ToString();
-                curd1.txtDateImport.Text = dgv_ListOrder.Rows[e.RowIndex].Cells[3].Value.ToString();
+                curd1.dtpDateImport.Text = dgv_ListOrder.Rows[e.RowIndex].Cells[3].Value.ToString();
                 curd1.txtTotal.Text = dgv_ListOrder.Rows[e.RowIndex].Cells[4].Value.ToString();
                 curd1.txtNote.Text = dgv_ListOrder.Rows[e.RowIndex].Cells[5].Value.ToString();
 
@@ -99,6 +100,19 @@ namespace GUI
                     PhieuNhapBLL.DeletePN(phieunhap.MaPN.ToString());
                     MessageBox.Show("Delete success", title, MessageBoxButtons.OK, MessageBoxIcon.Question);
                 }
+                dgv_ListOrder.Rows.Clear();
+                list = PhieuNhapBLL.LoadListPN();
+                for (int i = 0; i < list.Count; i++)
+                {
+                    dgv_ListOrder.Rows.Add(list[i].MaPN, list[i].MaNCC, list[i].MaNV, list[i].NgayNhap, list[i].TongTienPN, list[i].GhiChu);
+                }
+            }
+
+            else if (colName == "ShowDetail")
+            {
+                FrmOrderEntry_DETAIL curd2 = new FrmOrderEntry_DETAIL(this);
+                curd2.lbIDPN.Text = dgv_ListOrder.Rows[e.RowIndex].Cells[0].Value.ToString();
+                curd2.ShowDialog();
                 dgv_ListOrder.Rows.Clear();
                 list = PhieuNhapBLL.LoadListPN();
                 for (int i = 0; i < list.Count; i++)

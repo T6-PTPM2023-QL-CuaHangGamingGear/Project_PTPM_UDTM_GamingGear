@@ -15,12 +15,6 @@ namespace DAL.DAO
             return db.PhieuNhaps.ToList();
         }
 
-        public static List<ChiTietPhieuNhap> GetListCTPhieuNhap(int data)
-        {
-            List<ChiTietPhieuNhap> list = new List<ChiTietPhieuNhap>();
-            list = db.ChiTietPhieuNhaps.Where(x => x.MaPN == data).ToList();
-            return list;
-        }
 
         public static List<PhieuNhap> SearchPhieuNhap(String data)
         {
@@ -89,14 +83,7 @@ namespace DAL.DAO
             catch { }
         }
 
-        public void deleteCTPhieuNhap(int MaPN, int MaSP)
-        {
-            using (var db = new GEARSHOP_DBDataContext())
-            {
-                string query = "Exec Xoa_CTPN " + MaPN + ", " + MaSP;
-                db.ExecuteCommand(query);
-            }
-        }
+
 
 
 

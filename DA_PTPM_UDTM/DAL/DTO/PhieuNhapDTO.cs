@@ -15,11 +15,5 @@ namespace DAL.DTO
         public string TongTienPN { get; set; }
         public string GhiChu { get; set; }
 
-
-
-        public int MaSP { get; set; }
-        public int SoLuongSP { get; set; }
-        public string ThanhTien { get; set; }
-        public string GhiChuCT { get; set; }
     }
 }

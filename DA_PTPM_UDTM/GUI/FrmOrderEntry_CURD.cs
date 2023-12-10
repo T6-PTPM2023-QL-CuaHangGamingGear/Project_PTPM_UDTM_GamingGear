@@ -32,7 +32,7 @@ namespace GUI
 
         public void CheckField()
         {
-            if (cbbSupplier.Text == "" | cbbUser.Text == "" | txtID.Text == "")
+            if (cbbSupplier.Text == "" | cbbUser.Text == "" )
             {
                 MessageBox.Show("No information entered", "Error");
                 return;
@@ -85,7 +85,7 @@ namespace GUI
 
                     data.MaNCC = pndao.GetValueTenNCC(cbbSupplier.Text);
                     data.MaNV = pndao.GetValueTenNV(cbbUser.Text);
-                    data.NgayNhap = DateTime.Parse(txtDateImport.Text);
+                    data.NgayNhap = DateTime.Parse(dtpDateImport.Text);
                     data.TongTienPN = Convert.ToDecimal(txtTotal.Text);
                     data.GhiChu = txtNote.Text;
                     pn.UpdatePn(txtID.Text, data);
@@ -110,7 +110,7 @@ namespace GUI
 
                     data.MaNCC = pndao.GetValueTenNCC(cbbSupplier.Text);
                     data.MaNV = pndao.GetValueTenNV(cbbUser.Text);
-                    data.NgayNhap = DateTime.Parse(txtDateImport.Text);
+                    data.NgayNhap = DateTime.Parse(dtpDateImport.Text);
                     data.TongTienPN = Convert.ToDecimal(txtTotal.Text);
                     data.GhiChu = txtNote.Text;
                     pn.AddPN(data);

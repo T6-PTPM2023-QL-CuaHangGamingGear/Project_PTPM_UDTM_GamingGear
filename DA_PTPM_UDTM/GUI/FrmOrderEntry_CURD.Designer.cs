@@ -40,12 +40,12 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.dtpDateImport = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.txtTotal = new Guna.UI2.WinForms.Guna2TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.cbbUser = new Guna.UI2.WinForms.Guna2ComboBox();
             this.cbbSupplier = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtDateImport = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtNote = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtID = new Guna.UI2.WinForms.Guna2TextBox();
             this.label12 = new System.Windows.Forms.Label();
@@ -67,6 +67,7 @@
             // guna2Elipse2
             // 
             this.guna2Elipse2.BorderRadius = 10;
+            this.guna2Elipse2.TargetControl = this.guna2Panel1;
             // 
             // guna2Elipse3
             // 
@@ -171,12 +172,12 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.dtpDateImport);
             this.panel1.Controls.Add(this.txtTotal);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.cbbUser);
             this.panel1.Controls.Add(this.cbbSupplier);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.txtDateImport);
             this.panel1.Controls.Add(this.txtNote);
             this.panel1.Controls.Add(this.txtID);
             this.panel1.Controls.Add(this.label12);
@@ -187,6 +188,20 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(514, 471);
             this.panel1.TabIndex = 42;
+            // 
+            // dtpDateImport
+            // 
+            this.dtpDateImport.BorderRadius = 10;
+            this.dtpDateImport.Checked = true;
+            this.dtpDateImport.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dtpDateImport.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dtpDateImport.Location = new System.Drawing.Point(119, 93);
+            this.dtpDateImport.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dtpDateImport.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dtpDateImport.Name = "dtpDateImport";
+            this.dtpDateImport.Size = new System.Drawing.Size(222, 36);
+            this.dtpDateImport.TabIndex = 54;
+            this.dtpDateImport.Value = new System.DateTime(2023, 12, 11, 2, 54, 57, 90);
             // 
             // txtTotal
             // 
@@ -202,12 +217,12 @@
             this.txtTotal.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTotal.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTotal.IconRightOffset = new System.Drawing.Point(2, 0);
-            this.txtTotal.Location = new System.Drawing.Point(257, 93);
+            this.txtTotal.Location = new System.Drawing.Point(362, 93);
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.PasswordChar = '\0';
             this.txtTotal.PlaceholderText = "";
             this.txtTotal.SelectedText = "";
-            this.txtTotal.Size = new System.Drawing.Size(118, 30);
+            this.txtTotal.Size = new System.Drawing.Size(118, 36);
             this.txtTotal.TabIndex = 53;
             // 
             // label7
@@ -215,7 +230,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.DarkGray;
-            this.label7.Location = new System.Drawing.Point(254, 64);
+            this.label7.Location = new System.Drawing.Point(359, 64);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(39, 17);
             this.label7.TabIndex = 52;
@@ -268,28 +283,6 @@
             this.label1.TabIndex = 40;
             this.label1.Text = "Order Date";
             // 
-            // txtDateImport
-            // 
-            this.txtDateImport.BackColor = System.Drawing.SystemColors.Control;
-            this.txtDateImport.BorderRadius = 5;
-            this.txtDateImport.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtDateImport.DefaultText = "";
-            this.txtDateImport.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtDateImport.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtDateImport.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtDateImport.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtDateImport.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtDateImport.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDateImport.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtDateImport.IconRightOffset = new System.Drawing.Point(2, 0);
-            this.txtDateImport.Location = new System.Drawing.Point(118, 93);
-            this.txtDateImport.Name = "txtDateImport";
-            this.txtDateImport.PasswordChar = '\0';
-            this.txtDateImport.PlaceholderText = "";
-            this.txtDateImport.SelectedText = "";
-            this.txtDateImport.Size = new System.Drawing.Size(118, 30);
-            this.txtDateImport.TabIndex = 39;
-            // 
             // txtNote
             // 
             this.txtNote.BorderRadius = 6;
@@ -327,7 +320,7 @@
             this.txtID.PasswordChar = '\0';
             this.txtID.PlaceholderText = "";
             this.txtID.SelectedText = "";
-            this.txtID.Size = new System.Drawing.Size(73, 30);
+            this.txtID.Size = new System.Drawing.Size(73, 36);
             this.txtID.TabIndex = 19;
             // 
             // label12
@@ -459,7 +452,6 @@
         public Guna.UI2.WinForms.Guna2ComboBox cbbUser;
         public Guna.UI2.WinForms.Guna2ComboBox cbbSupplier;
         public System.Windows.Forms.Label label1;
-        public Guna.UI2.WinForms.Guna2TextBox txtDateImport;
         public Guna.UI2.WinForms.Guna2TextBox txtNote;
         public Guna.UI2.WinForms.Guna2TextBox txtID;
         public System.Windows.Forms.Label label12;
@@ -469,5 +461,6 @@
         public System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2Button btnClose;
         private UserControl_FrmList.UC_FrmCURD uC_FrmCURD2;
+        public Guna.UI2.WinForms.Guna2DateTimePicker dtpDateImport;
     }
 }
