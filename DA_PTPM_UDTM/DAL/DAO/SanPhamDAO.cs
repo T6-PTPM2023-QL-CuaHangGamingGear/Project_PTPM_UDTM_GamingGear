@@ -118,16 +118,6 @@ namespace DAL.DAO
         //    valueCbLoai = listLoaiSP.Find(x => x.TenLoaiSP == loaisp);
         //}
 
-
-        //public void getValueLoaiSP(string loaisp)
-        //{
-        //    listLoaiSP.Clear();
-        //    listLoaiSP = tenLoaiSP();
-        //    valueCbLoai = listLoaiSP.Find(x => x.TenLoaiSP == loaisp);
-        //}
-
-
-
         public int? GetValueLoaiSP(string loaisp)
         {
             listLoaiSP.Clear();

@@ -10,7 +10,6 @@ C:\Users\MSI\Documents\GitHub\Project_PTPM_UDTM_GamingGear\DA_PTPM_UDTM\GUI\obj\
 C:\Users\MSI\Documents\GitHub\Project_PTPM_UDTM_GamingGear\DA_PTPM_UDTM\GUI\obj\Debug\GUI.csproj.CopyComplete
 C:\Users\MSI\Documents\GitHub\Project_PTPM_UDTM_GamingGear\DA_PTPM_UDTM\GUI\obj\Debug\GUI.exe
 C:\Users\MSI\Documents\GitHub\Project_PTPM_UDTM_GamingGear\DA_PTPM_UDTM\GUI\obj\Debug\GUI.pdb
-C:\Users\MSI\Documents\GitHub\Project_PTPM_UDTM_GamingGear\DA_PTPM_UDTM\GUI\bin\Debug\DAL.dll
 C:\Users\MSI\Documents\GitHub\Project_PTPM_UDTM_GamingGear\DA_PTPM_UDTM\GUI\bin\Debug\DAL.pdb
 C:\Users\MSI\Documents\GitHub\Project_PTPM_UDTM_GamingGear\DA_PTPM_UDTM\GUI\bin\Debug\DAL.dll.config
 C:\Users\MSI\Documents\GitHub\Project_PTPM_UDTM_GamingGear\DA_PTPM_UDTM\GUI\obj\Debug\GUI.FrmMain.resources
@@ -26,3 +25,6 @@ C:\Users\MSI\Documents\GitHub\Project_PTPM_UDTM_GamingGear\DA_PTPM_UDTM\GUI\obj\
 C:\Users\MSI\Documents\GitHub\Project_PTPM_UDTM_GamingGear\DA_PTPM_UDTM\GUI\obj\Debug\GUI.FrmClient_CURD.resources
 C:\Users\MSI\Documents\GitHub\Project_PTPM_UDTM_GamingGear\DA_PTPM_UDTM\GUI\obj\Debug\GUI.FrmProduct.resources
 C:\Users\MSI\Documents\GitHub\Project_PTPM_UDTM_GamingGear\DA_PTPM_UDTM\GUI\obj\Debug\GUI.FrmProduct_CURD.resources
+C:\Users\MSI\Documents\GitHub\Project_PTPM_UDTM_GamingGear\DA_PTPM_UDTM\GUI\obj\Debug\GUI.FrmOrderEntry.resources
+C:\Users\MSI\Documents\GitHub\Project_PTPM_UDTM_GamingGear\DA_PTPM_UDTM\GUI\obj\Debug\GUI.FrmOrderEntry_CURD.resources
+C:\Users\MSI\Documents\GitHub\Project_PTPM_UDTM_GamingGear\DA_PTPM_UDTM\GUI\bin\Debug\DAL.dll

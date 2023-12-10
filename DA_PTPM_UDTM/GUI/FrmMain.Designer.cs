@@ -44,7 +44,7 @@
             this.panelChild = new System.Windows.Forms.Panel();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.btnNhapHang = new Guna.UI2.WinForms.Guna2Button();
+            this.btnPhieuNhap = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgSlide)).BeginInit();
@@ -73,7 +73,7 @@
             this.btnDoanhSo.Location = new System.Drawing.Point(23, 133);
             this.btnDoanhSo.Name = "btnDoanhSo";
             this.btnDoanhSo.Size = new System.Drawing.Size(149, 43);
-            this.btnDoanhSo.TabIndex = 1;
+            this.btnDoanhSo.TabIndex = 2;
             this.btnDoanhSo.Text = "Profit";
             this.btnDoanhSo.UseTransparentBackground = true;
             this.btnDoanhSo.CheckedChanged += new System.EventHandler(this.btnDoanhSo_CheckedChanged);
@@ -102,7 +102,6 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.btnNhapHang);
             this.panel1.Controls.Add(this.btnLogout);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
@@ -126,7 +125,7 @@
             this.btnLogout.HoverState.BorderColor = System.Drawing.Color.Gold;
             this.btnLogout.HoverState.FillColor = System.Drawing.Color.Gold;
             this.btnLogout.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btnLogout.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
+            this.btnLogout.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
             this.btnLogout.Image = ((System.Drawing.Image)(resources.GetObject("btnLogout.Image")));
             this.btnLogout.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnLogout.ImageOffset = new System.Drawing.Point(10, 0);
@@ -156,7 +155,7 @@
             this.btnNhanVien.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.btnNhanVien.CheckedState.FillColor = System.Drawing.Color.White;
             this.btnNhanVien.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(212)))));
-            this.btnNhanVien.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
+            this.btnNhanVien.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
             this.btnNhanVien.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnNhanVien.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnNhanVien.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -183,7 +182,7 @@
             this.btnKhachHang.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.btnKhachHang.CheckedState.FillColor = System.Drawing.Color.White;
             this.btnKhachHang.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(212)))));
-            this.btnKhachHang.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
+            this.btnKhachHang.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
             this.btnKhachHang.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnKhachHang.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnKhachHang.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -197,7 +196,7 @@
             this.btnKhachHang.Location = new System.Drawing.Point(23, 259);
             this.btnKhachHang.Name = "btnKhachHang";
             this.btnKhachHang.Size = new System.Drawing.Size(149, 43);
-            this.btnKhachHang.TabIndex = 3;
+            this.btnKhachHang.TabIndex = 2;
             this.btnKhachHang.Text = "Client";
             this.btnKhachHang.UseTransparentBackground = true;
             this.btnKhachHang.CheckedChanged += new System.EventHandler(this.btnDoanhSo_CheckedChanged);
@@ -210,7 +209,7 @@
             this.btnSanPham.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.btnSanPham.CheckedState.FillColor = System.Drawing.Color.White;
             this.btnSanPham.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(212)))));
-            this.btnSanPham.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image5")));
+            this.btnSanPham.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
             this.btnSanPham.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnSanPham.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnSanPham.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -224,7 +223,7 @@
             this.btnSanPham.Location = new System.Drawing.Point(23, 322);
             this.btnSanPham.Name = "btnSanPham";
             this.btnSanPham.Size = new System.Drawing.Size(149, 43);
-            this.btnSanPham.TabIndex = 4;
+            this.btnSanPham.TabIndex = 2;
             this.btnSanPham.Text = "Product";
             this.btnSanPham.UseTransparentBackground = true;
             this.btnSanPham.CheckedChanged += new System.EventHandler(this.btnDoanhSo_CheckedChanged);
@@ -237,7 +236,7 @@
             this.btnDonHang.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.btnDonHang.CheckedState.FillColor = System.Drawing.Color.White;
             this.btnDonHang.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(212)))));
-            this.btnDonHang.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image6")));
+            this.btnDonHang.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image5")));
             this.btnDonHang.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnDonHang.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnDonHang.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -251,7 +250,7 @@
             this.btnDonHang.Location = new System.Drawing.Point(23, 385);
             this.btnDonHang.Name = "btnDonHang";
             this.btnDonHang.Size = new System.Drawing.Size(149, 43);
-            this.btnDonHang.TabIndex = 5;
+            this.btnDonHang.TabIndex = 2;
             this.btnDonHang.Text = "Bill";
             this.btnDonHang.UseTransparentBackground = true;
             this.btnDonHang.CheckedChanged += new System.EventHandler(this.btnDoanhSo_CheckedChanged);
@@ -285,36 +284,39 @@
             this.guna2Elipse2.BorderRadius = 30;
             this.guna2Elipse2.TargetControl = this.panelChild;
             // 
-            // btnNhapHang
+            // btnPhieuNhap
             // 
-            this.btnNhapHang.BackColor = System.Drawing.Color.Transparent;
-            this.btnNhapHang.BorderRadius = 22;
-            this.btnNhapHang.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.btnNhapHang.CheckedState.FillColor = System.Drawing.Color.White;
-            this.btnNhapHang.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(212)))));
-            this.btnNhapHang.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
-            this.btnNhapHang.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnNhapHang.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnNhapHang.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnNhapHang.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnNhapHang.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(212)))));
-            this.btnNhapHang.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNhapHang.ForeColor = System.Drawing.Color.White;
-            this.btnNhapHang.Image = ((System.Drawing.Image)(resources.GetObject("btnNhapHang.Image")));
-            this.btnNhapHang.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnNhapHang.ImageOffset = new System.Drawing.Point(10, 0);
-            this.btnNhapHang.Location = new System.Drawing.Point(23, 447);
-            this.btnNhapHang.Name = "btnNhapHang";
-            this.btnNhapHang.Size = new System.Drawing.Size(149, 43);
-            this.btnNhapHang.TabIndex = 5;
-            this.btnNhapHang.Text = "Order";
-            this.btnNhapHang.UseTransparentBackground = true;
+            this.btnPhieuNhap.BackColor = System.Drawing.Color.Transparent;
+            this.btnPhieuNhap.BorderRadius = 22;
+            this.btnPhieuNhap.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnPhieuNhap.CheckedState.FillColor = System.Drawing.Color.White;
+            this.btnPhieuNhap.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(212)))));
+            this.btnPhieuNhap.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
+            this.btnPhieuNhap.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnPhieuNhap.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnPhieuNhap.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnPhieuNhap.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnPhieuNhap.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(212)))));
+            this.btnPhieuNhap.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPhieuNhap.ForeColor = System.Drawing.Color.White;
+            this.btnPhieuNhap.Image = ((System.Drawing.Image)(resources.GetObject("btnPhieuNhap.Image")));
+            this.btnPhieuNhap.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnPhieuNhap.ImageOffset = new System.Drawing.Point(10, 0);
+            this.btnPhieuNhap.Location = new System.Drawing.Point(23, 447);
+            this.btnPhieuNhap.Name = "btnPhieuNhap";
+            this.btnPhieuNhap.Size = new System.Drawing.Size(149, 43);
+            this.btnPhieuNhap.TabIndex = 7;
+            this.btnPhieuNhap.Text = "Order";
+            this.btnPhieuNhap.UseTransparentBackground = true;
+            this.btnPhieuNhap.CheckedChanged += new System.EventHandler(this.btnDoanhSo_CheckedChanged);
+            this.btnPhieuNhap.Click += new System.EventHandler(this.btnPhieuNhap_Click);
             // 
             // FrmMain
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(212)))));
             this.ClientSize = new System.Drawing.Size(1271, 557);
+            this.Controls.Add(this.btnPhieuNhap);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.btnDonHang);
             this.Controls.Add(this.btnSanPham);
@@ -351,6 +353,6 @@
         private System.Windows.Forms.Panel panelChild;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
         private Guna.UI2.WinForms.Guna2Button btnLogout;
-        private Guna.UI2.WinForms.Guna2Button btnNhapHang;
+        private Guna.UI2.WinForms.Guna2Button btnPhieuNhap;
     }
 }

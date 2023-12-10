@@ -85,5 +85,11 @@ namespace GUI
                 login.ShowDialog();
             }
         }
+
+        private void btnPhieuNhap_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FrmOrderEntry());
+
+        }
     }
 }

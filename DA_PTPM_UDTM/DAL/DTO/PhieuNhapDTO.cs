@@ -20,6 +20,6 @@ namespace DAL.DTO
         public int MaSP { get; set; }
         public int SoLuongSP { get; set; }
         public string ThanhTien { get; set; }
-        public string GhiChu1 { get; set; }
+        public string GhiChuCT { get; set; }
     }
 }
