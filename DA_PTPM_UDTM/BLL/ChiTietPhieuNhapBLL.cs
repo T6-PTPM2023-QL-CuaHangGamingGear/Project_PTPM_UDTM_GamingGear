@@ -19,5 +19,10 @@ namespace BLL
         {
             ChiTietPhieuNhapDAO.deleteCTPhieuNhap(data, data1);
         }
+
+        public static void InsertCTPN(int data, int? data1, int? data2, string data3)
+        {
+            ChiTietPhieuNhapDAO.insertCTPhieuNhap(data, data1, data2, data3);
+        }
     }
 }

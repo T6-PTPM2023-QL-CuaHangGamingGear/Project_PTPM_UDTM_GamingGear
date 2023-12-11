@@ -16,20 +16,15 @@ namespace DAL.DAO
             return list;
         }
 
-        public bool insertCTPhieuNhap(int MaPN, int MaSP, string soluongSP, string gianhapSP)
+        public static void insertCTPhieuNhap(int MaPN, int? MaSP, int? soluongSP, string gianhapSP)
         {
-            try
+            using (var db = new GEARSHOP_DBDataContext())
             {
-                using (var db = new GEARSHOP_DBDataContext())
-                {
-                    string query = "Exec Insert_ChiTietPhieuNhap '" + MaPN + "','" + MaSP + "' ,'" + soluongSP + "', '" + gianhapSP + "'";
-                    db.ExecuteCommand(query);
-                }
-                return true;
-            }
-            catch
-            {
-                return false;
+                string query = "INSERT INTO ChiTietPhieuNhap (MaPN, MaSP, SoLuongSP, GiaNhapSP) VALUES (" + MaPN + ", " + MaSP + ", " + soluongSP + ", " + gianhapSP + ");";
+                db.ExecuteCommand(query);
+
+                string triggerQuery = "UPDATE ChiTietPhieuNhap SET MaSP = MaSP WHERE MaPN = " + MaPN + ";";
+                db.ExecuteCommand(triggerQuery);
             }
         }
 

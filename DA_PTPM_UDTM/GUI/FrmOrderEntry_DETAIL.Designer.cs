@@ -40,8 +40,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtNote = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.lbIDPN = new System.Windows.Forms.Label();
-            this.cbbIDProduct = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.cbbProduct = new Guna.UI2.WinForms.Guna2ComboBox();
             this.dgv_ListDetail = new System.Windows.Forms.DataGridView();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -51,7 +53,7 @@
             this.Delete = new System.Windows.Forms.DataGridViewImageColumn();
             this.txtCosts = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtQuantity = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtName = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtIDProduct = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtTotal = new Guna.UI2.WinForms.Guna2TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -119,12 +121,14 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.txtNote);
+            this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.lbIDPN);
-            this.panel1.Controls.Add(this.cbbIDProduct);
+            this.panel1.Controls.Add(this.cbbProduct);
             this.panel1.Controls.Add(this.dgv_ListDetail);
             this.panel1.Controls.Add(this.txtCosts);
             this.panel1.Controls.Add(this.txtQuantity);
-            this.panel1.Controls.Add(this.txtName);
+            this.panel1.Controls.Add(this.txtIDProduct);
             this.panel1.Controls.Add(this.txtTotal);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label1);
@@ -136,6 +140,39 @@
             this.panel1.Size = new System.Drawing.Size(514, 471);
             this.panel1.TabIndex = 47;
             // 
+            // txtNote
+            // 
+            this.txtNote.BackColor = System.Drawing.SystemColors.Control;
+            this.txtNote.BorderRadius = 5;
+            this.txtNote.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtNote.DefaultText = "";
+            this.txtNote.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtNote.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtNote.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNote.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNote.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNote.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNote.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNote.IconRightOffset = new System.Drawing.Point(2, 0);
+            this.txtNote.Location = new System.Drawing.Point(321, 169);
+            this.txtNote.Name = "txtNote";
+            this.txtNote.PasswordChar = '\0';
+            this.txtNote.PlaceholderText = "";
+            this.txtNote.SelectedText = "";
+            this.txtNote.Size = new System.Drawing.Size(160, 36);
+            this.txtNote.TabIndex = 67;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.DarkGray;
+            this.label8.Location = new System.Drawing.Point(318, 141);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(40, 17);
+            this.label8.TabIndex = 66;
+            this.label8.Text = "Note";
+            // 
             // lbIDPN
             // 
             this.lbIDPN.AutoSize = true;
@@ -146,23 +183,23 @@
             this.lbIDPN.TabIndex = 65;
             this.lbIDPN.Text = "ID";
             // 
-            // cbbIDProduct
+            // cbbProduct
             // 
-            this.cbbIDProduct.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbbIDProduct.BackColor = System.Drawing.Color.Transparent;
-            this.cbbIDProduct.BorderRadius = 5;
-            this.cbbIDProduct.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbbIDProduct.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbbIDProduct.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbbIDProduct.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbbIDProduct.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cbbIDProduct.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cbbIDProduct.FormattingEnabled = true;
-            this.cbbIDProduct.ItemHeight = 30;
-            this.cbbIDProduct.Location = new System.Drawing.Point(25, 93);
-            this.cbbIDProduct.Name = "cbbIDProduct";
-            this.cbbIDProduct.Size = new System.Drawing.Size(93, 36);
-            this.cbbIDProduct.TabIndex = 64;
+            this.cbbProduct.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbbProduct.BackColor = System.Drawing.Color.Transparent;
+            this.cbbProduct.BorderRadius = 5;
+            this.cbbProduct.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbbProduct.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbbProduct.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbbProduct.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbbProduct.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cbbProduct.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cbbProduct.FormattingEnabled = true;
+            this.cbbProduct.ItemHeight = 30;
+            this.cbbProduct.Location = new System.Drawing.Point(25, 93);
+            this.cbbProduct.Name = "cbbProduct";
+            this.cbbProduct.Size = new System.Drawing.Size(264, 36);
+            this.cbbProduct.TabIndex = 64;
             // 
             // dgv_ListDetail
             // 
@@ -265,7 +302,7 @@
             this.txtCosts.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCosts.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCosts.IconRightOffset = new System.Drawing.Point(2, 0);
-            this.txtCosts.Location = new System.Drawing.Point(118, 169);
+            this.txtCosts.Location = new System.Drawing.Point(24, 169);
             this.txtCosts.Name = "txtCosts";
             this.txtCosts.PasswordChar = '\0';
             this.txtCosts.PlaceholderText = "";
@@ -287,7 +324,7 @@
             this.txtQuantity.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtQuantity.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtQuantity.IconRightOffset = new System.Drawing.Point(2, 0);
-            this.txtQuantity.Location = new System.Drawing.Point(25, 169);
+            this.txtQuantity.Location = new System.Drawing.Point(408, 93);
             this.txtQuantity.Name = "txtQuantity";
             this.txtQuantity.PasswordChar = '\0';
             this.txtQuantity.PlaceholderText = "";
@@ -295,27 +332,27 @@
             this.txtQuantity.Size = new System.Drawing.Size(73, 36);
             this.txtQuantity.TabIndex = 55;
             // 
-            // txtName
+            // txtIDProduct
             // 
-            this.txtName.BackColor = System.Drawing.SystemColors.Control;
-            this.txtName.BorderRadius = 5;
-            this.txtName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtName.DefaultText = "";
-            this.txtName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtName.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtName.IconRightOffset = new System.Drawing.Point(2, 0);
-            this.txtName.Location = new System.Drawing.Point(142, 93);
-            this.txtName.Name = "txtName";
-            this.txtName.PasswordChar = '\0';
-            this.txtName.PlaceholderText = "";
-            this.txtName.SelectedText = "";
-            this.txtName.Size = new System.Drawing.Size(216, 36);
-            this.txtName.TabIndex = 54;
+            this.txtIDProduct.BackColor = System.Drawing.SystemColors.Control;
+            this.txtIDProduct.BorderRadius = 5;
+            this.txtIDProduct.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtIDProduct.DefaultText = "";
+            this.txtIDProduct.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtIDProduct.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtIDProduct.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtIDProduct.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtIDProduct.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtIDProduct.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIDProduct.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtIDProduct.IconRightOffset = new System.Drawing.Point(2, 0);
+            this.txtIDProduct.Location = new System.Drawing.Point(312, 93);
+            this.txtIDProduct.Name = "txtIDProduct";
+            this.txtIDProduct.PasswordChar = '\0';
+            this.txtIDProduct.PlaceholderText = "";
+            this.txtIDProduct.SelectedText = "";
+            this.txtIDProduct.Size = new System.Drawing.Size(73, 36);
+            this.txtIDProduct.TabIndex = 54;
             // 
             // txtTotal
             // 
@@ -331,7 +368,7 @@
             this.txtTotal.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTotal.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTotal.IconRightOffset = new System.Drawing.Point(2, 0);
-            this.txtTotal.Location = new System.Drawing.Point(272, 169);
+            this.txtTotal.Location = new System.Drawing.Point(182, 169);
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.PasswordChar = '\0';
             this.txtTotal.PlaceholderText = "";
@@ -344,7 +381,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.DarkGray;
-            this.label7.Location = new System.Drawing.Point(272, 141);
+            this.label7.Location = new System.Drawing.Point(182, 141);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(39, 17);
             this.label7.TabIndex = 52;
@@ -355,7 +392,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DarkGray;
-            this.label1.Location = new System.Drawing.Point(140, 64);
+            this.label1.Location = new System.Drawing.Point(22, 64);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(103, 17);
             this.label1.TabIndex = 40;
@@ -366,7 +403,7 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.DarkGray;
-            this.label12.Location = new System.Drawing.Point(22, 64);
+            this.label12.Location = new System.Drawing.Point(309, 64);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(76, 17);
             this.label12.TabIndex = 18;
@@ -377,7 +414,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.DarkGray;
-            this.label6.Location = new System.Drawing.Point(116, 141);
+            this.label6.Location = new System.Drawing.Point(22, 141);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(90, 17);
             this.label6.TabIndex = 4;
@@ -388,7 +425,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.DarkGray;
-            this.label5.Location = new System.Drawing.Point(22, 141);
+            this.label5.Location = new System.Drawing.Point(405, 64);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(63, 17);
             this.label5.TabIndex = 2;
@@ -425,6 +462,7 @@
             this.btnClose.PressedColor = System.Drawing.Color.BlueViolet;
             this.btnClose.Size = new System.Drawing.Size(41, 42);
             this.btnClose.TabIndex = 42;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnSave
             // 
@@ -466,6 +504,7 @@
             this.btnCancel.Size = new System.Drawing.Size(79, 34);
             this.btnCancel.TabIndex = 49;
             this.btnCancel.Text = "Cancel";
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // guna2Elipse4
             // 
@@ -525,7 +564,7 @@
         public System.Windows.Forms.Label label12;
         public System.Windows.Forms.Label label6;
         public System.Windows.Forms.Label label5;
-        public Guna.UI2.WinForms.Guna2TextBox txtName;
+        public Guna.UI2.WinForms.Guna2TextBox txtIDProduct;
         public Guna.UI2.WinForms.Guna2TextBox txtQuantity;
         public Guna.UI2.WinForms.Guna2TextBox txtCosts;
         private System.Windows.Forms.DataGridView dgv_ListDetail;
@@ -536,7 +575,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
         private System.Windows.Forms.DataGridViewImageColumn Delete;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse4;
-        public Guna.UI2.WinForms.Guna2ComboBox cbbIDProduct;
+        public Guna.UI2.WinForms.Guna2ComboBox cbbProduct;
         public System.Windows.Forms.Label lbIDPN;
+        public Guna.UI2.WinForms.Guna2TextBox txtNote;
+        public System.Windows.Forms.Label label8;
     }
 }
