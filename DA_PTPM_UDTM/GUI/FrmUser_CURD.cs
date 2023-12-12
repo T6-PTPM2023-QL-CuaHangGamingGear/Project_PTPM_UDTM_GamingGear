@@ -31,7 +31,28 @@ namespace GUI
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-
+            CheckField();
+            if (check)
+            {
+                if (MessageBox.Show("Are you sure you want to update this user ? ", title, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    NhanVien data = new NhanVien();
+                    data.TenNV = txtName.Text;
+                    data.CCCD = txtIDCard.Text;
+                    data.DiaChi = txtAddress.Text;
+                    data.DienThoai = txtPhone.Text;
+                    data.ChucVu = txtPosition.Text;
+                    data.MatKhau = txtPasswrod.Text;
+                    data.GhiChu = txtNote.Text;
+                    nv.UpdateNV(txtID.Text, data);
+                    MessageBox.Show("Update success", title);
+                    this.Dispose();
+                }
+                else
+                {
+                    MessageBox.Show("Update failed", title);
+                }
+            }
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -72,31 +93,7 @@ namespace GUI
             check = true;
         }
 
-        private void btnUpdate_Click_1(object sender, EventArgs e)
-        {
-            CheckField();
-            if (check)
-            {
-                if (MessageBox.Show("Are you sure you want to update this user ? ", title, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-                {
-                    NhanVien data = new NhanVien();
-                    data.TenNV = txtName.Text;
-                    data.CCCD = txtIDCard.Text; 
-                    data.DiaChi = txtAddress.Text; 
-                    data.DienThoai = txtPhone.Text;
-                    data.ChucVu = txtPosition.Text;
-                    data.MatKhau = txtPasswrod.Text;
-                    data.GhiChu = txtNote.Text;
-                    nv.UpdateNV(txtID.Text,data);
-                    MessageBox.Show("Update success", title);
-                    this.Dispose();
-                }
-                else
-                {
-                    MessageBox.Show("Update failed", title);
-                }
-            }
-        }
+
 
 
 
@@ -110,5 +107,7 @@ namespace GUI
         {
             this.Close();
         }
+
+
     }
 }

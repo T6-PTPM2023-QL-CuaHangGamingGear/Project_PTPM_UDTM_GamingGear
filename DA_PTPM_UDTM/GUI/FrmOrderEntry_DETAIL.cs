@@ -76,6 +76,7 @@ namespace GUI
 
         private void dgv_ListDetail_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+
             string colName = dgv_ListDetail.Columns[e.ColumnIndex].Name;
             if (colName == "Delete")
             {
@@ -92,7 +93,19 @@ namespace GUI
 
                 }
             }
+
         }
+
+
+
+
+
+
+
+
+
+
+
 
         public void CheckField()
         {

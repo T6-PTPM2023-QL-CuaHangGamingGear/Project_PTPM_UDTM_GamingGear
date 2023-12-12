@@ -95,7 +95,7 @@ namespace GUI
 
             else if (colName == "Delete")
             {
-                if (MessageBox.Show("Are you sure you want to delete this client?", title, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (MessageBox.Show("Are you sure you want to delete this order?", title, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     PhieuNhapBLL.DeletePN(phieunhap.MaPN.ToString());
                     MessageBox.Show("Delete success", title, MessageBoxButtons.OK, MessageBoxIcon.Question);

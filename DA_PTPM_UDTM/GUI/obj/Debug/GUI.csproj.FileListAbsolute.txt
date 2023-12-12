@@ -29,3 +29,4 @@ C:\Users\MSI\Documents\GitHub\Project_PTPM_UDTM_GamingGear\DA_PTPM_UDTM\GUI\obj\
 C:\Users\MSI\Documents\GitHub\Project_PTPM_UDTM_GamingGear\DA_PTPM_UDTM\GUI\bin\Debug\DAL.dll
 C:\Users\MSI\Documents\GitHub\Project_PTPM_UDTM_GamingGear\DA_PTPM_UDTM\GUI\obj\Debug\GUI.FrmOrderEntry_DETAIL.resources
 C:\Users\MSI\Documents\GitHub\Project_PTPM_UDTM_GamingGear\DA_PTPM_UDTM\GUI\bin\Debug\BLL.dll
+C:\Users\MSI\Documents\GitHub\Project_PTPM_UDTM_GamingGear\DA_PTPM_UDTM\GUI\obj\Debug\GUI.FrmHome.resources

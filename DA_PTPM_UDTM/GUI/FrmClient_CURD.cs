@@ -37,30 +37,7 @@ namespace GUI
             check = true;
         }
 
-        private void btnSave_Click(object sender, EventArgs e)
-        {
-            CheckField();
-            if (check)
-            {
-                if (MessageBox.Show("Are you sure you want to add this client? ", title, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-                {
-                    KhachHang data = new KhachHang();
-                    data.TenKH = txtName.Text;
-                    data.DiaChi = txtAddress.Text;
-                    data.DienThoai = txtPhone.Text;
-                    data.Email = txtEmail.Text;
-                    data.MatKhau = txtPasswrod.Text;
-                    data.GhiChu = txtNote.Text;
-                    kh.AddKH(data);
-                    MessageBox.Show("Add success", title);
-                    this.Dispose();
-                }
-                else
-                {
-                    MessageBox.Show("Add failed", title);
-                }
-            }
-        }
+
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
@@ -96,6 +73,31 @@ namespace GUI
         private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            CheckField();
+            if (check)
+            {
+                if (MessageBox.Show("Are you sure you want to add this client? ", title, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    KhachHang data = new KhachHang();
+                    data.TenKH = txtName.Text;
+                    data.DiaChi = txtAddress.Text;
+                    data.DienThoai = txtPhone.Text;
+                    data.Email = txtEmail.Text;
+                    data.MatKhau = txtPasswrod.Text;
+                    data.GhiChu = txtNote.Text;
+                    kh.AddKH(data);
+                    MessageBox.Show("Add success", title);
+                    this.Dispose();
+                }
+                else
+                {
+                    MessageBox.Show("Add failed", title);
+                }
+            }
         }
     }
 }

@@ -32,7 +32,7 @@ namespace GUI
 
         private void btnDoanhSo_Click(object sender, EventArgs e)
         {
-            openChildForm(new FrmUser());
+            openChildForm(new FrmHome());
         }
 
         private void btnNhanVien_Click(object sender, EventArgs e)

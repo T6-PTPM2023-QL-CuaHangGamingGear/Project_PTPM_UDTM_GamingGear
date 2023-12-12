@@ -34,6 +34,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtIDCard = new ThietKeControl.txtChiNhapSo();
             this.txtAddress = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtID = new Guna.UI2.WinForms.Guna2TextBox();
             this.label12 = new System.Windows.Forms.Label();
@@ -46,7 +47,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.txtPhone = new ThietKeControl.txtChiNhapSo();
             this.label7 = new System.Windows.Forms.Label();
-            this.txtIDCard = new ThietKeControl.txtChiNhapChu();
             this.label6 = new System.Windows.Forms.Label();
             this.txtName = new ThietKeControl.txtChiNhapChu();
             this.label5 = new System.Windows.Forms.Label();
@@ -89,6 +89,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.txtIDCard);
             this.panel1.Controls.Add(this.txtAddress);
             this.panel1.Controls.Add(this.txtID);
             this.panel1.Controls.Add(this.label12);
@@ -101,7 +102,6 @@
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.txtPhone);
             this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.txtIDCard);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.txtName);
             this.panel1.Controls.Add(this.label5);
@@ -109,6 +109,26 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(514, 454);
             this.panel1.TabIndex = 24;
+            // 
+            // txtIDCard
+            // 
+            this.txtIDCard.BorderRadius = 6;
+            this.txtIDCard.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtIDCard.DefaultText = "";
+            this.txtIDCard.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtIDCard.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtIDCard.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtIDCard.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtIDCard.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtIDCard.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtIDCard.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtIDCard.Location = new System.Drawing.Point(365, 93);
+            this.txtIDCard.Name = "txtIDCard";
+            this.txtIDCard.PasswordChar = '\0';
+            this.txtIDCard.PlaceholderText = "";
+            this.txtIDCard.SelectedText = "";
+            this.txtIDCard.Size = new System.Drawing.Size(112, 30);
+            this.txtIDCard.TabIndex = 21;
             // 
             // txtAddress
             // 
@@ -296,26 +316,6 @@
             this.label7.TabIndex = 6;
             this.label7.Text = "Phone";
             // 
-            // txtIDCard
-            // 
-            this.txtIDCard.BorderRadius = 6;
-            this.txtIDCard.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtIDCard.DefaultText = "";
-            this.txtIDCard.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtIDCard.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtIDCard.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtIDCard.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtIDCard.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtIDCard.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIDCard.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtIDCard.Location = new System.Drawing.Point(364, 93);
-            this.txtIDCard.Name = "txtIDCard";
-            this.txtIDCard.PasswordChar = '\0';
-            this.txtIDCard.PlaceholderText = "";
-            this.txtIDCard.SelectedText = "";
-            this.txtIDCard.Size = new System.Drawing.Size(112, 30);
-            this.txtIDCard.TabIndex = 5;
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -445,6 +445,7 @@
             this.btnUpdate.Size = new System.Drawing.Size(79, 34);
             this.btnUpdate.TabIndex = 27;
             this.btnUpdate.Text = "Update";
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnSave
             // 
@@ -465,6 +466,7 @@
             this.btnSave.Size = new System.Drawing.Size(79, 34);
             this.btnSave.TabIndex = 26;
             this.btnSave.Text = "Save";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnCancel
             // 
@@ -552,11 +554,11 @@
         public System.Windows.Forms.Label label8;
         public ThietKeControl.txtChiNhapSo txtPhone;
         public System.Windows.Forms.Label label7;
-        public ThietKeControl.txtChiNhapChu txtIDCard;
         public System.Windows.Forms.Label label6;
         public ThietKeControl.txtChiNhapChu txtName;
         public System.Windows.Forms.Label label5;
         public System.Windows.Forms.Label label2;
         private UserControl_FrmList.UC_FrmCURD uC_FrmCURD4;
+        public ThietKeControl.txtChiNhapSo txtIDCard;
     }
 }
